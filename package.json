@@ -1,0 +1,39 @@
+{
+  "name": "benchessmark",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Chess matches between decision models (Jev, Clef) as a benchmark, with a replay viewer and video export.",
+  "license": "MIT",
+  "author": "Henrique Macedo (https://ickas.dev)",
+  "engines": {
+    "node": ">=20.12"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "match": "tsx src/cli/match.ts",
+    "grade": "tsx src/cli/grade.ts",
+    "summary": "tsx src/cli/summary.ts",
+    "viewer": "vite",
+    "video": "tsx scripts/export-video.ts"
+  },
+  "dependencies": {
+    "chess.js": "^1.4.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "playwright": "^1.63.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.3",
+    "vitest": "^5.0.3"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
+  }
+}

@@ -1,0 +1,743 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Benchessmark Plan</title>
+<link rel="stylesheet" href="/Users/henrique/.claude/plugins/cache/claude-community/html-plan/1.0.0/skills/html-plan/runtime/htmlplan.css">
+<script src="/Users/henrique/.claude/plugins/cache/claude-community/html-plan/1.0.0/skills/html-plan/runtime/htmlplan.js" defer></script>
+<style data-mock-shared>
+  .vw { font: 13px/1.4 ui-sans-serif, -apple-system, "Segoe UI", system-ui, sans-serif; color: #e8edf2; background: #0e1116; padding: 16px 18px; border-radius: 10px; }
+  .vw b { font-weight: 600; }
+  .vw .dim { color: #8b97a6; }
+  .vw .top { display: flex; gap: 12px; align-items: center; margin-bottom: 14px; }
+  .vw .brand { font-weight: 750; letter-spacing: -.01em; font-size: 15px; }
+  .vw .chip { border: 1px solid #2a323d; border-radius: 999px; padding: 2px 10px; color: #c6d0db; font-size: 12px; }
+  .vw .sp { flex: 1; }
+  .vw .main { display: grid; grid-template-columns: 16px 480px 1fr; gap: 14px; align-items: start; }
+  .vw .evalbar { height: 480px; width: 14px; border-radius: 7px; background: #20252d; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; border: 1px solid #2a323d; }
+  .vw .evalbar i { display: block; background: #eef1f4; }
+  .vw .bw { position: relative; width: 480px; height: 480px; border-radius: 6px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,.45); }
+  .vw .board { display: grid; grid-template-columns: repeat(8, 60px); grid-template-rows: repeat(8, 60px); }
+  .vw .sq { position: relative; display: flex; align-items: center; justify-content: center; font-weight: 400; }
+  .vw .sq.l { background: #dfe3e6; } .vw .sq.d { background: #7f8fa3; }
+  .vw .sq.hl.l { background: #ecdc8f; } .vw .sq.hl.d { background: #bcaa5c; }
+  .vw .sq i { font-style: normal; font-size: 46px; line-height: 1; font-family: "Apple Symbols", "Segoe UI Symbol", "DejaVu Sans", serif; }
+  .vw .pw { color: #fbfbfb; -webkit-text-stroke: 1.2px #1c2026; text-shadow: 0 2px 2px rgba(0,0,0,.25); }
+  .vw .pb { color: #15191f; }
+  .vw .sq u { position: absolute; text-decoration: none; font-size: 10px; font-weight: 700; }
+  .vw .rk { left: 3px; top: 2px; } .vw .fl { right: 4px; bottom: 1px; }
+  .vw .sq.l u { color: #7f8fa3; } .vw .sq.d u { color: #dfe3e6; }
+  .vw svg.arw { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+  .vw .side { display: flex; flex-direction: column; gap: 10px; }
+  .vw .card { background: #161b22; border: 1px solid #262d36; border-radius: 10px; padding: 10px 12px; }
+  .vw .card.on { border-color: #5ad1b5; box-shadow: 0 0 0 1px #5ad1b5 inset, 0 0 24px rgba(90,209,181,.12); }
+  .vw .who { display: flex; align-items: center; gap: 8px; }
+  .vw .dot { width: 10px; height: 10px; border-radius: 50%; }
+  .vw .nm { font-weight: 750; font-size: 15px; }
+  .vw .mk { color: #8b97a6; font-size: 12px; }
+  .vw .tag { margin-left: auto; font-size: 11px; padding: 1px 7px; border-radius: 4px; background: #232a33; color: #c6d0db; }
+  .vw .tag.go { background: #133a32; color: #7fe3c9; }
+  .vw .slug { font: 11px ui-monospace, SFMono-Regular, Menlo, monospace; color: #8b97a6; margin: 2px 0 8px; }
+  .vw .cand { display: grid; grid-template-columns: 52px 1fr 40px; gap: 8px; align-items: center; font: 12px ui-monospace, SFMono-Regular, Menlo, monospace; margin: 4px 0; }
+  .vw .cand span:last-child { text-align: right; }
+  .vw .bar { height: 7px; border-radius: 4px; background: #232a33; overflow: hidden; } .vw .bar i { display: block; height: 100%; }
+  .vw .last { font-size: 12.5px; margin-bottom: 2px; }
+  .vw .stats { display: flex; gap: 14px; font-size: 11.5px; color: #8b97a6; margin-top: 8px; padding-top: 8px; border-top: 1px solid #222a33; }
+  .vw .stats b { color: #e8edf2; }
+  .vw .moves { background: #161b22; border: 1px solid #262d36; border-radius: 10px; padding: 8px 0; font: 12.5px ui-monospace, SFMono-Regular, Menlo, monospace; }
+  .vw .mh { display: flex; justify-content: space-between; padding: 0 12px 6px; font: 600 12px ui-sans-serif, -apple-system, sans-serif; }
+  .vw .mr { display: grid; grid-template-columns: 30px 1fr 1fr; padding: 2px 12px; }
+  .vw .mr .n { color: #5d6876; } .vw .bk { color: #6b7684; } .vw .mr.cur { background: #1f2630; }
+  .vw .pend { color: #7fe3c9; }
+  .vw .tl { display: flex; align-items: center; gap: 12px; margin-top: 14px; }
+  .vw .ctl { display: flex; gap: 6px; } .vw .ctl span { min-width: 28px; height: 28px; padding: 0 6px; border-radius: 7px; background: #161b22; border: 1px solid #262d36; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #c6d0db; }
+  .vw .ctl span.rec { color: #ff7a6b; }
+  .vw .ticks { flex: 1; display: flex; gap: 2px; align-items: flex-end; height: 30px; }
+  .vw .ticks i { flex: 1; border-radius: 2px; background: #3a4450; height: 22%; }
+  .vw .ticks i.b { background: #262d36; height: 14%; } .vw .ticks i.n { background: #e3c25a; height: 55%; } .vw .ticks i.m { background: #e98b3e; height: 75%; } .vw .ticks i.x { background: #e5533d; height: 100%; }
+  .vw .ticks i.cur { outline: 2px solid #5ad1b5; outline-offset: 1px; }
+</style>
+<body>
+
+<header>
+  <h1>Chess Matches Between Models in Benchessmark</h1>
+  <doc-changes new="48"></doc-changes>
+  <details class="thread"><summary>Why · 5 quotes</summary>
+    <doc-quote via="prompt" from="the user">I want to create a project to allow two models to play chess against each other. My idea is to start with the Jav model against the Clef model from Cloudflare, and have them play each other as a benchmark.</doc-quote>
+    <doc-quote via="prompt" from="the user">I want to collect the most important data that can be useful for this benchmark, and make it easy to test other models later.</doc-quote>
+    <doc-quote via="prompt" from="the user">Both models should have identical configurations to ensure a fair test.</doc-quote>
+    <doc-quote via="prompt" from="the user">I also want a great design that shows the board and each player’s moves, so I can record the game. I’m not sure whether it’s easier to record my screen or if there’s another way.</doc-quote>
+    <doc-quote via="doc" from="docs/results-clef.md" where="battleship-vs-jev">One endpoint leaves the model as the only thing that varies.</doc-quote>
+  </details>
+</header>
+
+<main>
+<doc-plan>
+
+<!-- ═════ 1 · fair setup ═════ -->
+<doc-claim>
+  <p>The user sees both model setups side by side before a match.</p>
+  <doc-mock frame="terminal" title="benchessmark" w="500"><template><span class="dim">$</span> npm run match -- jev clef
+<b>Setup check</b> <span class="dim">· jev-vs-clef · 100 games</span>
+
+                  <b>Jev</b>               <b>Clef</b>
+model             jev-1.13          clef
+transport         openrouter        openrouter       <span class="g">✓</span>
+state             fen+board+moves   fen+board+moves  <span class="g">✓</span>
+question          #3f9a2c           #3f9a2c          <span class="g">✓</span>
+pick              top, seeded tie   top, seeded tie  <span class="g">✓</span>
+timeout, retries  60 s, 5           60 s, 5          <span class="g">✓</span>
+effort, temp      none exist        none exist       <span class="g" data-ref="effort">✓</span>
+first request     same except model                  <span class="g">✓</span>
+
+<span class="y" data-ref="fixed">Not settable</span>
+decimals          2                 4                <span class="y">!</span>
+build reported    jev-1.13-20260917 clef             <span class="y">!</span>
+state read limit  32k tokens        ≈2k tokens       <span class="g">✓</span>
+
+Start 100 games? <span class="dim">[Y/n]</span></template>
+    <doc-pin ref="effort" anchor="r" offset="22,0" title="No effort setting exists">Both APIs take a state and questions only.</doc-pin>
+    <doc-pin ref="fixed" anchor="r" offset="22,0" title="See 1.4">Three facts of the APIs. No setting changes them.</doc-pin>
+  </doc-mock>
+  <doc-note tone="info"><strong>Fair by request</strong> Neither API has an effort, a temperature or a seed. Both models get the same request. TypeSafe calls the model Jev, not Jav.</doc-note>
+
+  <doc-claim>
+    <p>One shared setup applies to both players. A player is only a model.</p>
+    <doc-schema id="setup" lang="ts" title="src/setup.ts · sketch" caption="No field in ModelEntry can change how a model plays.">
+<script type="text/plain">
+// One setup. Both players get all of it.
+export interface Setup {
+  transport: 'openrouter';             // decision on 1.2
+  state: 'fen+board+moves';            // decision on 2.2
+  instructions: string;                // the question, word for word
+  options: 'uci→san';                  // option key → label
+  pick: 'top, seeded tie';             // decision on 2.3
+  openings: 'data/openings.json';      // 50 lines × 2 colors
+  plyCap: 300;
+  timeoutMs: 60_000;
+  retries: 5;
+  seed: number;                        // tie breaks, opening order
+}
+
+// A player is a name and a model. Nothing else.
+// No effort, temperature or seed: neither API has one.
+export interface ModelEntry {
+  name: string;                        // "Jev"
+  maker: string;                       // "TypeSafe"
+  slug: string;                        // "typesafe/jev-1.13"
+  color: string;                       // the accent in the viewer
+}
+</script>
+    </doc-schema>
+    <doc-ask id="clef">
+      <p>Which Clef model plays Jev?</p>
+      <label><input type="radio" name="clef" value="clef" checked> Clef <small>27B, the accuracy model · $0.24 per 1M input tokens</small></label>
+      <label><input type="radio" name="clef" value="flash"> Clef-flash <small>9B, faster · $0.09 per 1M input tokens</small></label>
+      <label><input type="radio" name="clef" value="both"> Both, in a round robin of 3 models <small>3 matches, 300 games</small></label>
+    </doc-ask>
+  </doc-claim>
+
+  <doc-claim>
+    <p>Both models go through one endpoint, the OpenRouter Decisions API.</p>
+    <doc-calls title="One client for both" caption="Tap a row to see the code in battleship-vs-jev. The client is copied as it is.">
+<script type="text/plain">
++ **runMatch**(setup, white, black)               @ src/match/run.ts:1
++   new OpenRouterClient({ model: white.slug })   @ battleship-vs-jev/src/jev/openrouter.ts:199
++   new OpenRouterClient({ model: black.slug })   @ battleship-vs-jev/src/jev/openrouter.ts:199
++     ask(request)                                @ battleship-vs-jev/src/jev/openrouter.ts:227  -- one URL, one key
++       toSystemOneQuestions(questions)           @ battleship-vs-jev/src/jev/systemOne.ts:16
++       withRetry(…)                              @ battleship-vs-jev/src/jev/openrouter.ts:245  -- 8 s wait after a 429
+</script>
+    </doc-calls>
+    <doc-ask id="transport">
+      <p>How does the harness reach the two models?</p>
+      <label><input type="radio" name="transport" value="openrouter" checked> OpenRouter for both <small>one network path, billed cost, the build that answered</small></label>
+      <label><input type="radio" name="transport" value="vendor"> Each vendor's own API <small>TypeSafe API and Workers AI; Clef cost is an estimate</small></label>
+    </doc-ask>
+    <div data-if="transport=vendor"><doc-note tone="warn">Then the latency compares two networks too. results-clef.md found this.</doc-note></div>
+  </doc-claim>
+
+  <doc-claim>
+    <p>Before game 1, the runner compares both requests. Only the model can differ.</p>
+    <doc-code title="src/match/preflight.ts · sketch" lang="ts">
+<script type="text/plain">
+// Builds the first request for each player from the same position,
+// then compares them with the model field removed.
+export function assertSameRequest(setup: Setup, a: ModelEntry, b: ModelEntry) {
+  const chess = new Chess();
+  const ra = buildRequest(setup, chess, a);
+  const rb = buildRequest(setup, chess, b);
+  const strip = ({ model, ...rest }: DecisionRequest) => stableJson(rest);
+
+  if (strip(ra) !== strip(rb)) {
+    throw new Error(`The two setups differ:\n${diffJson(ra, rb)}`);
+  }
+  return sha256(strip(ra)).slice(0, 6);   // "#3f9a2c" in the setup check
+}
+</script>
+      <doc-pin line="10" tone="risk" title="The match does not start">A difference in any field stops the run.</doc-pin>
+    </doc-code>
+  </doc-claim>
+
+  <doc-claim>
+    <p>Three differences stay, and each game record names them.</p>
+    <doc-code title="src/match/differences.ts · sketch" lang="ts" caption="Measured in battleship-vs-jev, docs/results-clef.md.">
+<script type="text/plain">
+// No setting removes these. The setup check prints them,
+// and each game record keeps a copy.
+export const KNOWN_DIFFERENCES = [
+  { what: 'probability decimals', jev: 2, clef: 4,
+    effect: 'Jev ties more often at the top. A seeded draw breaks ties.' },
+  { what: 'build reported',
+    jev: 'typesafe/jev-1.13-20260917', clef: 'cloudflare/clef',
+    effect: 'A silent Clef update is not visible. Records keep the date.' },
+  { what: 'state read limit',
+    jev: '32k tokens', clef: '≈2k tokens (Workers AI)',
+    effect: 'The state must stay under 1,500 tokens. Each turn checks it.' },
+] as const;
+</script>
+      <doc-pin line="4" tone="warn" title="2 against 4 decimals">With 37 options, Jev often returns two moves at the same top value.</doc-pin>
+      <doc-pin line="12" title="A long game is approximately 360 tokens"></doc-pin>
+    </doc-code>
+  </doc-claim>
+
+  <doc-claim>
+    <p>A new model is one entry in models.ts.</p>
+    <doc-code title="src/models.ts · sketch" lang="ts" hl="14-17" caption="A chat model (GPT, Claude) needs an adapter. That is not in this plan.">
+<script type="text/plain">
+export const MODELS = {
+  jev: {
+    name: 'Jev', maker: 'TypeSafe',
+    slug: 'typesafe/jev-1.13', color: '#5ad1b5',
+  },
+  clef: {
+    name: 'Clef', maker: 'Cloudflare',
+    slug: 'cloudflare/clef', color: '#f6821f',
+  },
+  'clef-flash': {
+    name: 'Clef-flash', maker: 'Cloudflare',
+    slug: 'cloudflare/clef-flash', color: '#f9b36b',
+  },
+  // next: {
+  //   name: '…', maker: '…',
+  //   slug: 'vendor/model', color: '#…',
+  // },
+} satisfies Record<string, ModelEntry>;
+</script>
+      <doc-pin line="14" tone="ok" title="Add an entry, then run: npm run match -- jev next">A System One model needs nothing else.</doc-pin>
+    </doc-code>
+  </doc-claim>
+</doc-claim>
+
+<!-- ═════ 2 · one move ═════ -->
+<doc-claim>
+  <p>Each model picks one move from the list of legal moves.</p>
+  <doc-mock frame="terminal" title="runs/…/g017.log" w="480"><template><b>g017</b> <span class="dim">· C55 Two Knights · book to ply 6</span>
+<span class="dim">ply side model legal move   p       conf  ms</span>
+<span data-ref="p2">  7  w   Jev    33   Ng5    0.41    0.38  212</span>
+<span data-ref="p4">  8  b   Clef   28   d5     0.5318  0.47  611</span>
+  9  w   Jev    37   exd5   0.63    0.55  198
+ 10  b   Clef   37   Na5    0.3907  0.29  587
+ 11  w   Jev    37   Bb5+   0.44    0.36  240
+ 12  b   Clef    6   c6     0.8811  0.79  402</template>
+    <doc-pin ref="p2" anchor="r" offset="22,0" title="Jev returns 2 decimals"></doc-pin>
+    <doc-pin ref="p4" anchor="r" offset="46,0" title="Clef returns 4 decimals">See 1.4.</doc-pin>
+  </doc-mock>
+
+  <doc-claim>
+    <p>A turn is one call, with the legal moves as the options.</p>
+    <doc-calls title="One turn" caption="The model can only pick a legal move. An illegal move cannot occur.">
+<script type="text/plain">
++ **playTurn**(game, player)                  @ src/game/turn.ts:1
++   chess.moves({ verbose: true })                                     -- 1 to 218 moves; the limit is 255
++   **buildRequest**(setup, chess, legal)     @ src/game/request.ts:1
++   client.ask(request)                       @ battleship-vs-jev/src/jev/openrouter.ts:227
++   **pickMove**(answer, legal, rng)          @ src/game/pick.ts:1
++   chess.move(pick.move)
++   **writeGame**(dir, record)                @ src/record/writer.ts:1
+</script>
+    </doc-calls>
+    <doc-claim at="src/game/turn.ts:1">
+      <p><b>turn.ts:1</b> · playTurn()</p>
+      <doc-code title="src/game/turn.ts · sketch" lang="ts">
+<script type="text/plain">
+export async function playTurn(game: Game, player: Player): Promise<MoveRecord> {
+  const legal = game.chess.moves({ verbose: true });
+  const fenBefore = game.chess.fen();
+
+  if (legal.length === 1) {
+    return game.play(legal[0], { fenBefore, forced: true });
+  }
+
+  const request = buildRequest(game.setup, game.chess, legal);
+  assertStateUnder(request, 1_500);            // see 1.4
+  const res = await player.client.ask(request);
+  const answer = res.answers.move as ChoiceAnswer;
+  const pick = pickMove(answer, legal, game.rng);
+
+  return game.play(pick.move, {
+    fenBefore,
+    forced: false,
+    probabilities: answer.probabilities ?? {},
+    confidence: res.confidence.move,
+    tieCount: pick.tieCount,
+    call: callFacts(res),                      // ms, tokens, cost, build
+  });
+}
+</script>
+        <doc-pin line="5" title="A forced move makes no call">Clef refuses a choice with fewer than 2 options. The rule is the same for both.</doc-pin>
+      </doc-code>
+    </doc-claim>
+  </doc-claim>
+
+  <doc-claim>
+    <p>The state holds the FEN, a text board and the move list.</p>
+    <doc-code title="request body at ply 11 · sketch" lang="json" caption="A real position: 37 legal moves. Only model differs between the players.">
+<script type="text/plain">
+{
+  "model": "typesafe/jev-1.13",
+  "state": {
+    "game": "chess", "you_play": "white",
+    "fen": "r1bqkb1r/ppp2ppp/5n2/n2Pp1N1/2B5/8/PPPP1PPP/RNBQK2R w KQkq - 1 6",
+    "board": [
+      "8 r . b q k b . r",
+      "7 p p p . . p p p",
+      "6 . . . . . n . .",
+      "5 n . . P p . N .",
+      "4 . . B . . . . .",
+      "3 . . . . . . . .",
+      "2 P P P P . P P P",
+      "1 R N B Q K . . R",
+      "  a b c d e f g h"
+    ],
+    "legend": "uppercase is white, lowercase is black",
+    "moves": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5"
+  },
+  "questions": {
+    "move": {
+      "type": "choice",
+      "instructions": "Pick the best move for white in this position.",
+      "criteria": { "c4b5": "Bb5+", "d2d3": "d3", "d1e2": "Qe2", "…": "34 more" }
+    }
+  }
+}
+</script>
+      <doc-pin line="7" title="The text board helps with counting">TypeSafe lists counting as a weak point of jev-1.13.</doc-pin>
+      <doc-pin line="25" title="Key is UCI, label is SAN">UCI keys hold only letters and digits.</doc-pin>
+    </doc-code>
+    <doc-ask id="state">
+      <p>What does the model see each turn?</p>
+      <label><input type="radio" name="state" value="board" checked> FEN, text board and move list <small>approximately 650 tokens a call</small></label>
+      <label><input type="radio" name="state" value="fen"> FEN and move list only <small>the classic minimal format</small></label>
+      <label><input type="radio" name="state" value="describe"> Also one line for each move <small>for example “knight f3 to g5”; more help, more tokens</small></label>
+    </doc-ask>
+  </doc-claim>
+
+  <doc-claim>
+    <p>The harness plays the most probable move. A seeded draw breaks a tie.</p>
+    <doc-code title="src/game/pick.ts · sketch" lang="ts">
+<script type="text/plain">
+// The same rule for both models. The rng is seeded for each game.
+export function pickMove(answer: ChoiceAnswer, legal: Move[], rng: Rng) {
+  const p = answer.probabilities ?? { [answer.choice]: 1 };
+  const top = Math.max(...legal.map((m) => p[m.lan] ?? 0));
+  const tied = legal.filter((m) => (p[m.lan] ?? 0) === top);
+  return { move: tied[rng.int(tied.length)]!, tieCount: tied.length };
+}
+</script>
+      <doc-pin line="3" title="The API's own choice is not used">Its tie rule is not documented.</doc-pin>
+    </doc-code>
+    <doc-ask id="pick">
+      <p>How does a probability list become one move?</p>
+      <label><input type="radio" name="pick" value="top" checked> Play the most probable move <small>the same opening gives the same game</small></label>
+      <label><input type="radio" name="pick" value="sample"> Sample from the probabilities <small>temperature 1; games vary</small></label>
+    </doc-ask>
+    <div data-if="pick=sample"><doc-note tone="warn">Jev rounds to 2 decimals, so many options get 0. Sampling then treats the models differently.</doc-note></div>
+  </doc-claim>
+
+  <doc-claim>
+    <p>The client retries a failed call 5 times. Then the game ends as an error.</p>
+    <doc-code src="battleship-vs-jev/src/jev/openrouter.ts" lines="96-113" hl="109" caption="Copied as it is. The summary counts error games apart from the score.">
+      <doc-pin line="109" title="Retry only what can pass on a second try">A 402 (no credit) stops at once.</doc-pin>
+    </doc-code>
+  </doc-claim>
+</doc-claim>
+
+<!-- ═════ 3 · match ═════ -->
+<doc-claim>
+  <p>A match plays each opening twice and saves every move.</p>
+  <doc-mock frame="terminal" title="benchessmark" w="480"><template><span class="dim">$</span> npm run match -- jev clef
+<span class="dim">runs/2026-10-06T18-40-jev-vs-clef/</span>
+g015  C50 Giuoco Piano   Jev w   <b>1-0</b>  mate     71
+g016  C50 Giuoco Piano   Clef w  <b>½-½</b>  3-fold   58
+g017  C55 Two Knights    Jev w   <b>0-1</b>  mate     44
+<span data-ref="live">g018  C55 Two Knights    Clef w  <span class="y">… ply 23</span></span>
+<span class="dim">────────────────────────────────────────────────</span>
+<span class="inv"> SAMPLE </span> Jev 8.5 · Clef 8.5 · errors 0 · $0.12</template>
+    <doc-pin ref="live" anchor="r" offset="22,0" title="The viewer can open g018 now">See 3.2.</doc-pin>
+  </doc-mock>
+
+  <doc-claim>
+    <p>Each of 50 openings gets two games, one for each color.</p>
+    <doc-code title="data/openings.json · sketch" lang="json" caption="From lichess-org/chess-openings (CC0). The flag --games changes the count.">
+<script type="text/plain">
+[
+  { "eco": "C50", "name": "Italian Game: Giuoco Piano",
+    "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 f8c5" },
+  { "eco": "C55", "name": "Italian Game: Two Knights Defense",
+    "uci": "e2e4 e7e5 g1f3 b8c6 f1c4 g8f6" },
+  { "eco": "B90", "name": "Sicilian Defense: Najdorf Variation",
+    "uci": "e2e4 c7c5 g1f3 d7d6 d2d4 c5d4 f3d4 g8f6 b1c3 a7a6" },
+  { "eco": "D30", "name": "Queen's Gambit Declined",
+    "uci": "d2d4 d7d5 c2c4 e7e6" }
+]
+</script>
+      <doc-pin line="1" title="46 more lines, 2 to 10 plies deep">A fixed top move gives a fixed game, so the openings give the variety.</doc-pin>
+    </doc-code>
+  </doc-claim>
+
+  <doc-claim>
+    <p>The runner writes the game file after each move.</p>
+    <doc-calls title="The match loop" caption="A crash loses one move at most. The viewer reads the same file.">
+<script type="text/plain">
++ **runMatch**(setup, white, black)           @ src/match/run.ts:1
++   **assertSameRequest**(setup, a, b)        @ src/match/preflight.ts:1
++   **loadOpenings**(setup.openings)          @ src/match/openings.ts:1
++   for each opening, each color
++     **playGame**(setup, opening, players)   @ src/game/play.ts:1
++       playTurn(game, player)                @ src/game/turn.ts:1
++       writeGame(dir, record)                @ src/record/writer.ts:1  -- temp file, then rename
++   **gradeRun**(dir)                         @ src/analysis/grade.ts:1  -- Stockfish, see 4.1
+</script>
+    </doc-calls>
+  </doc-claim>
+
+  <doc-claim>
+    <p>A game ends by the rules of chess, or at 300 plies.</p>
+    <doc-code title="src/game/play.ts · sketch" lang="ts">
+<script type="text/plain">
+export function termination(chess: Chess, ply: number): Termination | null {
+  if (chess.isCheckmate()) return 'checkmate';
+  if (chess.isStalemate()) return 'stalemate';
+  if (chess.isThreefoldRepetition()) return 'threefold';
+  if (chess.isInsufficientMaterial()) return 'insufficient';
+  if (chess.isDrawByFiftyMoves()) return 'fifty-move';
+  if (ply >= 300) return 'ply-cap';     // a draw, counted apart
+  return null;
+}
+</script>
+    </doc-code>
+  </doc-claim>
+</doc-claim>
+
+<!-- ═════ 4 · summary ═════ -->
+<doc-claim>
+  <p>A summary compares the models on result, move quality, speed and cost.</p>
+  <doc-mock frame="terminal" title="benchessmark" w="480"><template><span class="dim">$</span> npm run summary -- runs/2026-10-06T18-40-jev-vs-clef
+<span data-ref="sample"><span class="inv"> SAMPLE · not a result </span>  100 games · 0 errors</span>
+
+                <b>Jev</b>             <b>Clef</b>
+score           54.5            45.5
+W / D / L       41 / 27 / 32    32 / 27 / 41
+<span data-ref="elo">Elo gap         +31  95% [−26, +91]  <span class="y">tie</span></span>
+accuracy        61.2 %          57.8 %
+ACPL            88              104
+blunders /100   6.1             7.9
+best move       31 %            27 %
+p on best       0.24            0.19
+latency p50     292 ms          641 ms
+latency p95     480 ms          1190 ms
+cost            $0.10 billed    $0.55 billed</template>
+    <doc-pin ref="sample" anchor="r" offset="22,0" title="Invented numbers">They show the layout only.</doc-pin>
+    <doc-pin ref="elo" anchor="r" offset="22,0" title="The interval decides">If it holds 0, the result is a tie.</doc-pin>
+  </doc-mock>
+
+  <doc-claim>
+    <p>Stockfish grades each move after the game.</p>
+    <doc-calls title="Grading" caption="Install it once with brew install stockfish. Each record keeps the version and the depth.">
+<script type="text/plain">
++ **gradeRun**(dir)                           @ src/analysis/grade.ts:1
++   **openEngine**()                          @ src/analysis/stockfish.ts:1  -- UCI; Threads 1, Hash 256
++   go depth 18 for each position                                       -- eval before and after
++   **classify**(winBefore, winAfter)         @ src/analysis/quality.ts:1
++   writeGame(dir, record)                    @ src/record/writer.ts:1    -- adds grade to each move
+</script>
+    </doc-calls>
+  </doc-claim>
+
+  <doc-claim>
+    <p>Move quality uses the win-chance formulas from lichess.</p>
+    <doc-code title="src/analysis/quality.ts · sketch" lang="ts">
+<script type="text/plain">
+// Win chance in -1..1 from centipawns, as lichess does.
+export const winChance = (cp: number) =>
+  2 / (1 + Math.exp(-0.00368208 * cp)) - 1;
+
+// Accuracy of one move from the drop in win % (0..100).
+export const moveAccuracy = (winPctBefore: number, winPctAfter: number) =>
+  clamp(103.1668 * Math.exp(-0.04354 * (winPctBefore - winPctAfter)) - 3.1669, 0, 100);
+
+// Drop in win chance for the side that moved.
+export function classify(drop: number): Grade {
+  if (drop >= 0.3) return 'blunder';
+  if (drop >= 0.2) return 'mistake';
+  if (drop >= 0.1) return 'inaccuracy';
+  return 'good';
+}
+</script>
+      <doc-pin line="2" title="A lost position does not inflate the loss">One pawn at +8 matters less than one pawn at 0.</doc-pin>
+    </doc-code>
+  </doc-claim>
+
+  <doc-claim>
+    <p>The Elo gap comes with a 95% interval.</p>
+    <doc-code title="src/analysis/elo.ts · sketch" lang="ts">
+<script type="text/plain">
+// scores: 1 win, 0.5 draw, 0 loss, for player A, one per game.
+export function eloGap(scores: number[]) {
+  const s = mean(scores);
+  const se = stdDev(scores) / Math.sqrt(scores.length);
+  const elo = (x: number) => -400 * Math.log10(1 / x - 1);
+  return { elo: elo(s), low: elo(s - 1.96 * se), high: elo(s + 1.96 * se) };
+}
+</script>
+      <doc-pin line="3" title="mean and stdDev come from battleship-vs-jev">src/metrics/summary.ts:35 and :47.</doc-pin>
+      <doc-pin line="6" tone="info" title="100 games give approximately ±60 Elo"></doc-pin>
+    </doc-code>
+  </doc-claim>
+
+  <doc-claim>
+    <p>Calibration shows if high confidence goes with good moves.</p>
+    <doc-code title="src/analysis/summary.ts · sketch" lang="ts">
+<script type="text/plain">
+// Five bins of confidence. For each: how often the model found the
+// Stockfish move, and the mean drop in win chance.
+export function calibration(moves: GradedMove[]) {
+  const edges = [0, 0.2, 0.4, 0.6, 0.8, 1.01];
+  return edges.slice(0, -1).map((lo, i) => {
+    const bin = moves.filter((m) => m.confidence >= lo && m.confidence < edges[i + 1]);
+    return {
+      range: [lo, edges[i + 1]],
+      n: bin.length,
+      bestRate: mean(bin.map((m) => (m.uci === m.grade.bestUci ? 1 : 0))),
+      meanDrop: mean(bin.map((m) => m.grade.drop)),
+      pOnBest: mean(bin.map((m) => m.probabilities[m.grade.bestUci] ?? 0)),
+    };
+  });
+}
+</script>
+      <doc-pin line="13" title="Probability on the Stockfish move">Only a decision model gives this number.</doc-pin>
+    </doc-code>
+  </doc-claim>
+
+  <doc-claim>
+    <p>Two code players give fixed points on the Elo scale.</p>
+    <doc-calls title="Reference players" caption="Strike a row to leave it out. Both use the same Player interface as the models.">
+<script type="text/plain">
+? **RandomPlayer**()                          @ src/players/random.ts:1     -- a uniform legal move; the floor
+? **StockfishPlayer**({ elo: 1320 })          @ src/players/stockfish.ts:1  -- UCI_LimitStrength; the lowest level
+?   npm run match -- jev random
+?   npm run match -- clef stockfish-1320
+</script>
+    </doc-calls>
+  </doc-claim>
+</doc-claim>
+
+<!-- ═════ 5 · viewer and video ═════ -->
+<doc-claim>
+  <p>The user replays any game and can save it as a video.</p>
+  <doc-mock frame="browser" url="localhost:5173/?game=runs/2026-10-06T18-40-jev-vs-clef/g017.json" w="1040" thumbnail caption="Sample data. Nothing has run yet."><template>
+<div class="vw">
+  <div class="top">
+    <span class="brand">benchessmark</span><span class="dim">jev-vs-clef · game 17 of 100</span>
+    <span class="chip">C55 · Italian Game: Two Knights Defense</span>
+    <span class="sp"></span><span class="dim">ply 11 of 44</span><span class="chip">Stockfish +0.4</span>
+  </div>
+  <div class="main">
+    <div class="evalbar"><i style="height:54%"></i></div>
+    <div class="bw" data-ref="board">
+      <div class="board"><b class="sq l"><i class="pb">♜</i><u class="rk">8</u></b><b class="sq d"></b><b class="sq l"><i class="pb">♝</i></b><b class="sq d"><i class="pb">♛</i></b><b class="sq l"><i class="pb">♚</i></b><b class="sq d"><i class="pb">♝</i></b><b class="sq l"></b><b class="sq d"><i class="pb">♜</i></b><b class="sq d"><i class="pb">♟︎</i><u class="rk">7</u></b><b class="sq l"><i class="pb">♟︎</i></b><b class="sq d"><i class="pb">♟︎</i></b><b class="sq l"></b><b class="sq d"></b><b class="sq l"><i class="pb">♟︎</i></b><b class="sq d"><i class="pb">♟︎</i></b><b class="sq l"><i class="pb">♟︎</i></b><b class="sq l"><u class="rk">6</u></b><b class="sq d"></b><b class="sq l hl"></b><b class="sq d"></b><b class="sq l"></b><b class="sq d"><i class="pb">♞</i></b><b class="sq l"></b><b class="sq d"></b><b class="sq d hl"><i class="pb">♞</i><u class="rk">5</u></b><b class="sq l"></b><b class="sq d"></b><b class="sq l"><i class="pw">♟︎</i></b><b class="sq d"><i class="pb">♟︎</i></b><b class="sq l"></b><b class="sq d"><i class="pw">♞</i></b><b class="sq l"></b><b class="sq l"><u class="rk">4</u></b><b class="sq d"></b><b class="sq l"><i class="pw">♝</i></b><b class="sq d"></b><b class="sq l"></b><b class="sq d"></b><b class="sq l"></b><b class="sq d"></b><b class="sq d"><u class="rk">3</u></b><b class="sq l"></b><b class="sq d"></b><b class="sq l"></b><b class="sq d"></b><b class="sq l"></b><b class="sq d"></b><b class="sq l"></b><b class="sq l"><i class="pw">♟︎</i><u class="rk">2</u></b><b class="sq d"><i class="pw">♟︎</i></b><b class="sq l"><i class="pw">♟︎</i></b><b class="sq d"><i class="pw">♟︎</i></b><b class="sq l"></b><b class="sq d"><i class="pw">♟︎</i></b><b class="sq l"><i class="pw">♟︎</i></b><b class="sq d"><i class="pw">♟︎</i></b><b class="sq d"><i class="pw">♜</i><u class="rk">1</u><u class="fl">a</u></b><b class="sq l"><i class="pw">♞</i><u class="fl">b</u></b><b class="sq d"><i class="pw">♝</i><u class="fl">c</u></b><b class="sq l"><i class="pw">♛</i><u class="fl">d</u></b><b class="sq d"><i class="pw">♚</i><u class="fl">e</u></b><b class="sq l"><u class="fl">f</u></b><b class="sq d"><u class="fl">g</u></b><b class="sq l"><i class="pw">♜</i><u class="fl">h</u></b></div>
+      <svg class="arw" viewBox="0 0 8 8">
+        <g fill="#20a587" stroke="#20a587" stroke-linecap="round">
+          <line x1="2.5" y1="4.5" x2="1.88" y2="3.88" stroke-width=".2" opacity=".95"/>
+          <polygon points="1.585,3.585 2.066,3.698 1.698,4.066" stroke="none" opacity=".95"/>
+          <line x1="3.5" y1="6.5" x2="3.5" y2="5.94" stroke-width=".15" opacity=".7"/>
+          <polygon points="3.5,5.6 3.29,5.94 3.71,5.94" stroke="none" opacity=".7"/>
+          <line x1="3.5" y1="7.5" x2="4.217" y2="6.783" stroke-width=".11" opacity=".5"/>
+          <polygon points="4.415,6.585 4.337,6.903 4.097,6.663" stroke="none" opacity=".5"/>
+        </g>
+        <g font-family="ui-sans-serif, -apple-system, sans-serif" font-size=".22" font-weight="700" text-anchor="middle">
+          <rect x=".92" y="2.98" width=".56" height=".3" rx=".15" fill="#0e1116"/><text x="1.2" y="3.205" fill="#7fe3c9">44%</text>
+          <rect x="3.72" y="5.2" width=".56" height=".3" rx=".15" fill="#0e1116"/><text x="4" y="5.425" fill="#7fe3c9">31%</text>
+          <rect x="4.6" y="6.2" width=".5" height=".3" rx=".15" fill="#0e1116"/><text x="4.85" y="6.425" fill="#7fe3c9">9%</text>
+        </g>
+      </svg>
+    </div>
+    <div class="side">
+      <div class="card">
+        <div class="who"><span class="dot" style="background:#f6821f"></span><span class="nm">Clef</span><span class="mk">Cloudflare</span><span class="tag">black</span></div>
+        <div class="slug">cloudflare/clef</div>
+        <div class="last">Last <b>5… Na5</b> <span class="dim">· p 0.3907 · conf 0.29 · 587 ms</span></div>
+        <div class="stats"><span>accuracy <b>58%</b></span><span>ACPL <b>41</b></span><span>p50 <b>598 ms</b></span><span>cost <b>$0.0011</b></span></div>
+      </div>
+      <div class="moves">
+        <div class="mh"><span>Moves</span><span class="dim">book to ply 6</span></div>
+        <div class="mr"><span class="n">1.</span><span class="bk">e4</span><span class="bk">e5</span></div>
+        <div class="mr"><span class="n">2.</span><span class="bk">Nf3</span><span class="bk">Nc6</span></div>
+        <div class="mr"><span class="n">3.</span><span class="bk">Bc4</span><span class="bk">Nf6</span></div>
+        <div class="mr"><span class="n">4.</span><span>Ng5</span><span>d5</span></div>
+        <div class="mr"><span class="n">5.</span><span>exd5</span><span>Na5</span></div>
+        <div class="mr cur"><span class="n">6.</span><span class="pend">Bb5+ ▸</span><span></span></div>
+      </div>
+      <div class="card on" data-ref="jev">
+        <div class="who"><span class="dot" style="background:#5ad1b5"></span><span class="nm">Jev</span><span class="mk">TypeSafe</span><span class="tag go">white · to move</span></div>
+        <div class="slug">typesafe/jev-1.13-20260917 · 37 legal</div>
+        <div class="cand"><b>Bb5+</b><span class="bar"><i style="width:44%;background:#5ad1b5"></i></span><span>44%</span></div>
+        <div class="cand"><b>d3</b><span class="bar"><i style="width:31%;background:#5ad1b5;opacity:.7"></i></span><span>31%</span></div>
+        <div class="cand"><b>Qe2</b><span class="bar"><i style="width:9%;background:#5ad1b5;opacity:.5"></i></span><span>9%</span></div>
+        <div class="cand dim"><span>34 more</span><span class="bar"><i style="width:16%;background:#3a4450"></i></span><span>16%</span></div>
+        <div class="stats"><span>conf <b>0.36</b></span><span>accuracy <b>63%</b></span><span>ACPL <b>32</b></span><span>p50 <b>226 ms</b></span></div>
+      </div>
+    </div>
+  </div>
+  <div class="tl">
+    <div class="ctl"><span>⏮</span><span>◀</span><span>❚❚</span><span>▶</span><span>⏭</span><span>1.5 s</span><span class="rec">● Record</span></div>
+    <div class="ticks" data-ref="tl"><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i></i><i></i><i></i><i></i><i class="cur"></i><i></i><i class="n"></i><i></i><i></i><i></i><i class="n"></i><i></i><i></i><i class="m"></i><i></i><i></i><i></i><i></i><i class="n"></i><i></i><i></i><i></i><i class="x"></i><i></i><i></i><i class="n"></i><i></i><i></i><i class="m"></i><i></i><i></i><i class="x"></i><i></i><i></i><i></i><i class="m"></i><i></i><i></i></div>
+  </div>
+</div></template>
+    <doc-pin ref="board" anchor="tl" title="Arrows show the top 3 options">Thicker means more probable.</doc-pin>
+    <doc-pin ref="jev" anchor="l" title="The player to move">See 5.1.</doc-pin>
+    <doc-pin ref="tl" anchor="tr" title="One mark for each ply">Color is the Stockfish grade. Red is a blunder.</doc-pin>
+  </doc-mock>
+
+  <doc-claim>
+    <p>Each player card shows the move and the top 3 options.</p>
+    <doc-mock frame="none" w="400"><template>
+<div class="vw" style="padding:12px">
+  <div class="card on">
+    <div class="who"><span class="dot" style="background:#5ad1b5"></span><span class="nm">Jev</span><span class="mk">TypeSafe</span><span class="tag go">white · to move</span></div>
+    <div class="slug" data-ref="build">typesafe/jev-1.13-20260917 · 37 legal</div>
+    <div class="cand" data-ref="top"><b>Bb5+</b><span class="bar"><i style="width:44%;background:#5ad1b5"></i></span><span>44%</span></div>
+    <div class="cand"><b>d3</b><span class="bar"><i style="width:31%;background:#5ad1b5;opacity:.7"></i></span><span>31%</span></div>
+    <div class="cand"><b>Qe2</b><span class="bar"><i style="width:9%;background:#5ad1b5;opacity:.5"></i></span><span>9%</span></div>
+    <div class="cand dim"><span>34 more</span><span class="bar"><i style="width:16%;background:#3a4450"></i></span><span>16%</span></div>
+    <div class="stats" data-ref="stats"><span>conf <b>0.36</b></span><span>accuracy <b>63%</b></span><span>ACPL <b>32</b></span><span>p50 <b>226 ms</b></span></div>
+  </div>
+</div></template>
+      <doc-pin ref="build" anchor="tr" offset="-60,-4" title="The build that answered">From the response, not from the request.</doc-pin>
+      <doc-pin ref="top" anchor="l" offset="-10,0" title="The played move is the top bar"></doc-pin>
+      <doc-pin ref="stats" anchor="br" title="Totals up to this ply"></doc-pin>
+    </doc-mock>
+  </doc-claim>
+
+  <doc-claim>
+    <p>The viewer reads game files. It never calls a model.</p>
+    <doc-calls title="Viewer" caption="Vite and React, in viewer/. The page holds no API key.">
+<script type="text/plain">
++ <**Viewer**/>                               @ viewer/src/App.tsx:1
++   **useGame**(path)                         @ viewer/src/useGame.ts:1      -- polls each second while a game runs
++   <**Board**/>                              @ viewer/src/Board.tsx:1       -- one SVG; piece position is a function of time
++   <**PlayerCard**/> × 2                     @ viewer/src/PlayerCard.tsx:1
++   <**MoveList**/>                           @ viewer/src/MoveList.tsx:1
++   <**EvalBar**/>                            @ viewer/src/EvalBar.tsx:1
++   <**Timeline**/>                           @ viewer/src/Timeline.tsx:1
++ vite serves runs/ at /runs                  @ vite.config.ts:1
+</script>
+    </doc-calls>
+  </doc-claim>
+
+  <doc-claim>
+    <p>One command renders a game to an MP4 file.</p>
+    <doc-mock frame="terminal" title="benchessmark" w="480"><template><span class="dim">$</span> npm run video -- runs/…/g017.json
+frame   1920 × 1080 · 30 fps · 1.5 s for each move
+book    plies 1–6 at 0.5 s · 3 s title · 4 s result
+frames  <span class="g">████████████████████</span> 2,010 / 2,010
+encode  ffmpeg · h264 · crf 18
+<span class="g">✓</span> runs/…/g017.mp4  <span class="dim">1:07 · 9 MB</span></template>
+    </doc-mock>
+    <doc-ask id="video">
+      <p>How do you want to record a game?</p>
+      <label><input type="radio" name="video" value="script" checked> A script renders it from the game file <small>the same video each time, at any speed</small></label>
+      <label><input type="radio" name="video" value="screen"> I record the screen myself <small>QuickTime or OBS · claim 5.3 goes</small></label>
+    </doc-ask>
+    <div data-if="video=screen"><doc-note tone="info">Then press R in the viewer for a clean 1920 × 1080 frame.</doc-note></div>
+
+    <doc-claim at="scripts/export-video.ts:1">
+      <p><b>export-video.ts:1</b> · renderVideo()</p>
+      <doc-code title="scripts/export-video.ts · sketch" lang="ts">
+<script type="text/plain">
+// Frames come from the game file, not from a clock,
+// so the video is the same each time.
+export async function renderVideo(gameFile: string, out: string, fps = 30) {
+  const browser = await chromium.launch();
+  const page = await browser.newPage({ viewport: { width: 1920, height: 1080 } });
+  await page.goto(`http://localhost:5173/?game=${gameFile}&record=1`);
+
+  const ff = spawn('ffmpeg', ['-y', '-f', 'image2pipe', '-framerate', String(fps),
+    '-i', '-', '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-crf', '18', out]);
+
+  const total = await page.evaluate(() => window.replay.durationMs());
+  for (let t = 0; t <= total; t += 1000 / fps) {
+    await page.evaluate((ms) => window.replay.renderAt(ms), t);
+    await write(ff.stdin, await page.screenshot({ type: 'png' }));
+  }
+  ff.stdin.end();
+  await browser.close();
+}
+</script>
+        <doc-pin line="9" title="ffmpeg is installed">/opt/homebrew/bin/ffmpeg. Playwright is a new dev dependency.</doc-pin>
+        <doc-pin line="14" title="renderAt draws one exact frame">The record mode of the viewer gives this function.</doc-pin>
+      </doc-code>
+    </doc-claim>
+  </doc-claim>
+</doc-claim>
+
+<!-- ═════ shared · scope ═════ -->
+<doc-claim aux="shared">
+  <p>Shared: one game record. The runner writes it and the viewer reads it.</p>
+  <doc-schema id="record" lang="ts" title="src/record/types.ts" caption="One JSON file for each game, plus a PGN copy.">
+<script type="text/plain">
+export interface GameRecord {
+  schema: 'benchessmark/game@1';
+  setup: Setup;                       // the full shared setup, copied in
+  setupHash: string;                  // "#3f9a2c"
+  differences: typeof KNOWN_DIFFERENCES;
+  white: PlayerRecord;                // slug asked for + builds that answered
+  black: PlayerRecord;
+  opening: { eco: string; name: string; uci: string[] };
+  moves: MoveRecord[];
+  result: '1-0' | '0-1' | '1/2-1/2' | '*';
+  termination: Termination | 'error';
+  engine?: { name: string; version: string; depth: number };
+  // … startedAt, endedAt, harness git sha, chess.js version
+}
+
+export interface MoveRecord {
+  ply: number;  side: 'w' | 'b';  fenBefore: string;
+  uci: string;  san: string;  legal: number;
+  book: boolean;  forced: boolean;
+  probabilities: Record<string, number>;   // every option, as returned
+  confidence?: number;  tieCount: number;
+  call?: { ms: number; attempts: number; retryWaitMs: number;
+           inputTokens?: number; costUsd?: number; build: string; id?: string };
+  grade?: { cpBefore: number; cpAfter: number; bestUci: string;
+            drop: number; accuracy: number; class: Grade };
+}
+</script>
+  </doc-schema>
+</doc-claim>
+
+<doc-claim aux="scope">
+  <p>Not changing: battleship-vs-jev. Not in this plan: chat models, images, clocks.</p>
+  <ul>
+    <li>battleship-vs-jev does not change. Benchessmark copies 6 files from it.</li>
+    <li>Chat models (GPT, Claude) need an adapter that reads a move from text.</li>
+    <li>No board images: Jev cannot read them.</li>
+    <li>No clocks: each call takes less than 2 seconds.</li>
+    <li>Later: one fixed set of positions for both models, for a paired test.</li>
+  </ul>
+</doc-claim>
+
+</doc-plan>
+</main>
+</body>
+</html>
