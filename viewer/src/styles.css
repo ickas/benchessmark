@@ -152,8 +152,8 @@ svg.board { display: block; width: 100%; height: 100%; }
 
 /* ── record mode: a fixed 1920 × 1080 stage ── */
 .rec { --board: 880px; overflow: hidden; }
-.rec .stage-wrap { position: fixed; inset: 0; display: grid; place-items: center; background: var(--bg); overflow: hidden; }
-.rec .stage { width: 1920px; height: 1080px; flex: none; padding: 40px 72px; transform-origin: center; max-width: none; margin: 0; }
+.rec .stage-wrap { position: fixed; inset: 0; background: var(--bg); overflow: hidden; }
+.rec .stage { position: absolute; left: 50%; top: 50%; width: 1920px; height: 1080px; padding: 40px 72px; transform-origin: center; max-width: none; margin: 0; }
 .rec .top { font-size: 18px; margin-bottom: 26px; }
 .rec .top .brand { font-size: 22px; }
 .rec .chip { font-size: 15px; padding: 4px 14px; }
@@ -172,8 +172,10 @@ svg.board { display: block; width: 100%; height: 100%; }
 .rec .mh { font-size: 15px; }
 .rec .tl { margin-top: 22px; }
 .rec .ticks { height: 40px; }
-.rec .mv.ahead { visibility: hidden; }
-.rec .tick.ahead { background: #262d36; opacity: 1; }
+.rec .mr { max-width: 460px; }
+/* No spoilers on video: moves and grades appear as they happen. */
+.rec .mv.ahead, .rec .mr.ahead { visibility: hidden; }
+.rec .tick.ahead { background: #262d36; opacity: 1; height: 14% !important; }
 .rec .player { transition: none; }
 
 /* ── run list ── */

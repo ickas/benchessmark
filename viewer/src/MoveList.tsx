@@ -62,7 +62,7 @@ export function MoveList({ moves, pos, opening, onSeek }: MoveListProps) {
       </div>
       <div className="list" ref={box}>
         {rows.map(([w, b, n]) => (
-          <div className="mr" key={n}>
+          <div className={`mr${(w ?? b)!.ply - 1 >= pos ? ' ahead' : ''}`} key={n}>
             <span className="n">{n}.</span>
             {cell(w)}
             {cell(b)}

@@ -86,7 +86,13 @@ export function GameView({ path, record: scripted, moveMs }: GameViewProps) {
         const f = frameAt(ms, schedule);
         setFrame(f);
         if (ms >= schedule.total) {
-          stop(n);
+          // A recording ends on the result card; the board view ends on the board.
+          if (rec) {
+            if (clock.current) cancelAnimationFrame(clock.current.raf);
+            clock.current = null;
+            setPlaying(false);
+            setPos(n);
+          } else stop(n);
           return;
         }
         clock.current = { wall, raf: requestAnimationFrame(tick) };
@@ -100,8 +106,17 @@ export function GameView({ path, record: scripted, moveMs }: GameViewProps) {
   useEffect(() => () => stop(), [stop]);
 
   const toggle = useCallback(() => {
-    if (playing) stop(frame?.pos ?? shownPos);
-    else play(shownPos);
+    if (playing) {
+      if (clock.current) cancelAnimationFrame(clock.current.raf);
+      clock.current = null;
+      setPlaying(false);
+      setPos(frame?.pos ?? shownPos);
+      // Paused on a card: keep the card on screen.
+      if (!frame || frame.phase === 'play') setFrame(null);
+    } else {
+      setFrame(null);
+      play(shownPos);
+    }
   }, [playing, frame, shownPos, play, stop]);
 
   const seek = useCallback(
@@ -124,12 +139,15 @@ export function GameView({ path, record: scripted, moveMs }: GameViewProps) {
       else if (e.key === 'r' || e.key === 'R') {
         stop(0);
         setRec((v) => !v);
+      } else if (e.key === 'Escape' && rec) {
+        stop(0);
+        setRec(false);
       } else return;
       e.preventDefault();
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [scripted, seek, toggle, stop, frame, shownPos, n]);
+  }, [scripted, seek, toggle, stop, frame, shownPos, n, rec]);
 
   // Record mode by hand (R): play from the title card once the stage is up.
   const autoplayed = useRef(false);
@@ -289,7 +307,7 @@ function Stage({ rec, children }: { rec: boolean; children: ReactNode }) {
   if (!rec) return <div className="stage">{children}</div>;
   return (
     <div className="stage-wrap">
-      <div className="stage" style={{ transform: `scale(${scale})` }}>
+      <div className="stage" style={{ transform: `translate(-50%, -50%) scale(${scale})` }}>
         {children}
       </div>
     </div>

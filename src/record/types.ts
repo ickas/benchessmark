@@ -78,6 +78,8 @@ export interface Difference {
   white: string;
   black: string;
   effect: string;
+  /** The harness guards against it, so it cannot change a result. */
+  handled: boolean;
 }
 
 export interface MoveRecord {

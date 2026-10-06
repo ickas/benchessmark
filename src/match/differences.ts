@@ -38,5 +38,7 @@ export function knownDifferences(white: PlayerInfo, black: PlayerInfo): Differen
     white: a[key],
     black: b[key],
     effect: EFFECTS[key],
+    // Every turn checks the state size, so the read limit cannot cut a board.
+    handled: key === 'stateLimit',
   }));
 }

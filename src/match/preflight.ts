@@ -55,7 +55,7 @@ export function formatSetupCheck(
   differences: Difference[],
   games: number,
 ): string {
-  const L = 18;
+  const L = 22;
   const C = 18;
   const ok = color.g('✓');
   const row = (label: string, x: string, y: string, mark = '') =>
@@ -95,7 +95,7 @@ export function formatSetupCheck(
   if (differences.length) {
     lines.push('', color.y('Not settable'));
     for (const d of differences) {
-      lines.push(row(d.what, d.white, d.black, d.white === d.black ? ok : color.y('!')));
+      lines.push(row(d.what, d.white, d.black, d.white === d.black || d.handled ? ok : color.y('!')));
     }
   }
   return lines.join('\n');

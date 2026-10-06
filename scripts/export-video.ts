@@ -30,7 +30,9 @@ export async function renderVideo(gameFile: string, out: string, options: VideoO
   const url = server.resolvedUrls?.local[0];
   if (!url) throw new Error('The viewer did not start');
 
-  const browser = await chromium.launch();
+  // The full Chromium in new headless mode: it renders as a real Chrome does,
+  // and it is the build `npx playwright install chromium` fetches.
+  const browser = await chromium.launch({ channel: 'chromium' });
   try {
     const page = await browser.newPage({ viewport: { width: 1920, height: 1080 }, deviceScaleFactor: 1 });
     await page.goto(`${url}?game=${encodeURI(gameFile)}&record=1&moveMs=${options.moveMs}`);
