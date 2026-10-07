@@ -1,0 +1,12 @@
+[Event "benchessmark 2026-10-07T09-51-clef-vs-clef-flash"]
+[Site "benchessmark"]
+[Date "2026.10.07"]
+[Round "5"]
+[White "Clef (cloudflare/clef)"]
+[Black "Clef-flash (cloudflare/clef-flash)"]
+[Result "0-1"]
+[Opening "Italian Game: Giuoco Piano"]
+[ECO "C50"]
+[Termination "checkmate"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. d4 exd4 5. Nxd4 Nxd4 6. Qxd4 Bxd4 7. O-O Nf6 8. e5 Bxe5 9. Nc3 O-O 10. Bd3 Bxc3 11. bxc3 d5 12. c4 dxc4 13. Bxc4 Nd5 14. Bxd5 Qxd5 15. Rd1 Qxd1# 0-1

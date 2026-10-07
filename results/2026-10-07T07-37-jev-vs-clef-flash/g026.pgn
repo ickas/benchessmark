@@ -1,0 +1,12 @@
+[Event "benchessmark 2026-10-07T07-37-jev-vs-clef-flash"]
+[Site "benchessmark"]
+[Date "2026.10.07"]
+[Round "26"]
+[White "Clef-flash (cloudflare/clef-flash)"]
+[Black "Jev (typesafe/jev-1.13-20260917)"]
+[Result "0-1"]
+[Opening "Sicilian Defense: Dragon Variation"]
+[ECO "B70"]
+[Termination "checkmate"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. e5 dxe5 7. Bb5+ Bd7 8. O-O Bxb5 9. Ndxb5 Bg7 10. Qxd8+ Kxd8 11. Nxa7 Rxa7 12. Rd1+ Kc8 13. Rd8+ Rxd8 14. Bd2 Rxd2 15. Nd5 Nxd5 16. c3 Nxc3 17. bxc3 Raxa2 18. Rxa2 Rd1# 0-1

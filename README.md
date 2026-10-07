@@ -8,6 +8,22 @@ It starts with **Jev** (TypeSafe) against **Clef** (Cloudflare). Both are System
 decision models: they do not write text, they score options. Each turn the legal
 moves are the options, so a model can never play an illegal move.
 
+## Results
+
+Three matches of 100 games, the same 50 openings each, graded by Stockfish 19:
+
+| match | score | Elo gap, 95% interval |
+| --- | --- | --- |
+| Clef vs Jev | 57 – 43 | Clef +49 [+17, +82] |
+| Clef-flash vs Jev | 55.5 – 44.5 | Clef-flash +38 [+11, +66] |
+| Clef-flash vs Clef | 52 – 48 | +14 [−17, +45], a tie |
+
+The two Clef models are tied, and both are stronger than Jev. Clef-flash plays
+like Clef at about a third of the price; Jev is the cheapest and fastest. Most
+games (76–83 of 100) end in a draw, mostly by repetition. The full write-up, with
+calibration, cost and what the numbers do **not** establish, is in
+[docs/results.md](docs/results.md). Every game is in [results/](results) as PGN.
+
 The plan this was built from is in [docs/plan.packed.html](docs/plan.packed.html).
 
 ## Requirements

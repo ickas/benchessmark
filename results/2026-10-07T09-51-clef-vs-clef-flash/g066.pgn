@@ -1,0 +1,12 @@
+[Event "benchessmark 2026-10-07T09-51-clef-vs-clef-flash"]
+[Site "benchessmark"]
+[Date "2026.10.07"]
+[Round "66"]
+[White "Clef-flash (cloudflare/clef-flash)"]
+[Black "Clef (cloudflare/clef)"]
+[Result "0-1"]
+[Opening "Queen's Pawn Game"]
+[ECO "D00"]
+[Termination "checkmate"]
+
+1. d4 d5 2. e3 c5 3. dxc5 Nc6 4. Nf3 Nf6 5. c3 e5 6. Nxe5 Nxe5 7. Qxd5 Qxd5 8. Bb5+ Bd7 9. O-O Bxb5 10. e4 Nxe4 11. c4 Nxc4 12. Nc3 Nxc3 13. bxc3 Bxc5 14. Re1+ Kf8 15. Re8+ Rxe8 16. Bb2 Nxb2 17. c4 Nxc4 18. Re1 Rxe1# 0-1

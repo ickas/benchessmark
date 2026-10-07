@@ -1,0 +1,12 @@
+[Event "benchessmark 2026-10-06T20-21-jev-vs-clef"]
+[Site "benchessmark"]
+[Date "2026.10.06"]
+[Round "4"]
+[White "Clef (cloudflare/clef)"]
+[Black "Jev (typesafe/jev-1.13-20260917)"]
+[Result "1/2-1/2"]
+[Opening "Ruy Lopez: Berlin Defense"]
+[ECO "C65"]
+[Termination "threefold"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. d4 exd4 5. Nxd4 Nxd4 6. Qxd4 Nxe4 7. Qxe4+ Be7 8. Qxe7+ Kxe7 9. O-O Re8 10. Re1+ Kd6 11. Rxe8 Qxe8 12. Bf4+ Kc5 13. Be3+ Kxb5 14. c4+ Kxc4 15. b3+ Kd5 16. Nc3+ Ke6 17. b4 b5 18. Nxb5 Kd5 19. Nc3+ Kd6 20. Ne4+ Qxe4 21. Bf4+ Qxf4 22. Rd1+ Qd4 23. Rxd4+ Kc6 24. b5+ Kxb5 25. a4+ Ka5 26. Rd5+ Kb6 27. Rd6+ cxd6 28. a5+ Kxa5 29. f4 Kb4 30. f5 d5 31. f6 gxf6 32. g3 Kc3 33. g4 Kd4 34. g5 fxg5 35. h3 Kd3 36. h4 gxh4 37. Kf2 Kc2 38. Ke3 d4+ 39. Kxd4 Kd1 40. Kd3 Ba6+ 41. Kc3 Rc8+ 42. Kb3 Rc3+ 43. Kxc3 Bc4 44. Kxc4 d5+ 45. Kxd5 Kc1 46. Kc6 Kb2 47. Kd5 Kc3 48. Kc6 Kd4 49. Kd6 Kc4 50. Ke5 f6+ 51. Kxf6 Kd4 52. Ke6 Kd3 53. Kd5 Kc2 54. Kd4 Kb3 55. Ke3 Kc4 56. Ke4 Kc5 57. Kd3 Kd5 58. Kc3 Ke4 59. Kc4 Ke3 60. Kb3 Kd4 61. Kb4 a5+ 62. Kxa5 Kd3 63. Kb4 Kc2 64. Kc4 Kb2 65. Kd4 Kc2 66. Kc5 Kd3 67. Kd5 Kc3 68. Kc6 Kd4 69. Kd6 Kd3 70. Kd5 Kc3 71. Kc6 Kd4 72. Kd6 Kd3 73. Kd5 1/2-1/2

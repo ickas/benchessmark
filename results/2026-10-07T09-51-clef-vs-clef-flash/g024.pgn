@@ -1,0 +1,12 @@
+[Event "benchessmark 2026-10-07T09-51-clef-vs-clef-flash"]
+[Site "benchessmark"]
+[Date "2026.10.07"]
+[Round "24"]
+[White "Clef-flash (cloudflare/clef-flash)"]
+[Black "Clef (cloudflare/clef)"]
+[Result "0-1"]
+[Opening "Sicilian Defense: Najdorf Variation"]
+[ECO "B90"]
+[Termination "checkmate"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. e5 dxe5 7. Bb5+ axb5 8. Ndxb5 Qxd1+ 9. Kxd1 Nc6 10. Nd6+ exd6 11. Bd2 d5 12. Nxd5 Nxd5 13. c3 Nxc3+ 14. bxc3 Bg4+ 15. f3 Bxf3+ 16. gxf3 O-O-O 17. c4 Rxd2+ 18. Kxd2 Bb4+ 19. Kd3 e4+ 20. fxe4 Ne5+ 21. Kd4 Nc6+ 22. Kd5 Rd8# 0-1

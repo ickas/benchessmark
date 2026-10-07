@@ -1,0 +1,12 @@
+[Event "benchessmark 2026-10-07T09-51-clef-vs-clef-flash"]
+[Site "benchessmark"]
+[Date "2026.10.07"]
+[Round "21"]
+[White "Clef (cloudflare/clef)"]
+[Black "Clef-flash (cloudflare/clef-flash)"]
+[Result "0-1"]
+[Opening "Bishop's Opening"]
+[ECO "C23"]
+[Termination "checkmate"]
+
+1. e4 e5 2. Bc4 d5 3. exd5 Qxd5 4. Bxd5 Nf6 5. Nf3 Nxd5 6. d4 exd4 7. Nxd4 Nf6 8. O-O Nc6 9. Nxc6 bxc6 10. Re1+ Be7 11. Rxe7+ Kxe7 12. Qe1+ Be6 13. Qxe6+ fxe6 14. Nc3 e5 15. Nd5+ cxd5 16. Be3 c5 17. Bxc5+ Ke6 18. Bxa7 Rxa7 19. Re1 Rxa2 20. Rxe5+ Kxe5 21. f4+ Kxf4 22. g3+ Ke3 23. Kg2 Rxb2 24. Kf1 Rxc2 25. Ke1 Rc1# 0-1

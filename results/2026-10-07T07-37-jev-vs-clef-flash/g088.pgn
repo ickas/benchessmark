@@ -1,0 +1,12 @@
+[Event "benchessmark 2026-10-07T07-37-jev-vs-clef-flash"]
+[Site "benchessmark"]
+[Date "2026.10.07"]
+[Round "88"]
+[White "Clef-flash (cloudflare/clef-flash)"]
+[Black "Jev (typesafe/jev-1.13-20260917)"]
+[Result "1-0"]
+[Opening "English Opening: King's English Variation"]
+[ECO "A20"]
+[Termination "checkmate"]
+
+1. c4 e5 2. d4 exd4 3. Qxd4 Nf6 4. Nf3 Bb4+ 5. Nc3 Bxc3+ 6. bxc3 O-O 7. e4 Nxe4 8. Qxe4 d5 9. cxd5 Qxd5 10. Qxd5 Re8+ 11. Ne5 Rxe5+ 12. Qxe5 Nc6 13. Qe8# 1-0

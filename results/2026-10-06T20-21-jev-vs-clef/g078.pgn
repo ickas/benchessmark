@@ -1,0 +1,12 @@
+[Event "benchessmark 2026-10-06T20-21-jev-vs-clef"]
+[Site "benchessmark"]
+[Date "2026.10.06"]
+[Round "78"]
+[White "Clef (cloudflare/clef)"]
+[Black "Jev (typesafe/jev-1.13-20260917)"]
+[Result "1/2-1/2"]
+[Opening "Benoni Defense: Modern Variation"]
+[ECO "A60"]
+[Termination "threefold"]
+
+1. d4 Nf6 2. c4 c5 3. d5 e6 4. dxe6 dxe6 5. Nf3 Nc6 6. Qxd8+ Kxd8 7. e4 Nxe4 8. Bg5+ Nxg5 9. Nxg5 Nd4 10. Nxe6+ Nxe6 11. Nc3 Bd6 12. O-O-O Kc7 13. Rxd6 Kxd6 14. Ne4+ Kc6 15. Nc3 Nd4 16. Ne4 Nb3+ 17. axb3 Rd8 18. Nc3 Rd1+ 19. Kxd1 Bg4+ 20. Kc1 Bd1 21. Kxd1 Rd8+ 22. Kc1 Rd1+ 23. Kxd1 Kd6 24. Ne4+ Ke5 25. f4+ Kxe4 26. Bd3+ Kxd3 27. Kc1 Kd4 28. Rd1+ Ke3 29. Re1+ Kxf4 30. g3+ Kg4 31. h3+ Kxh3 32. Rh1+ Kxg3 33. Rh3+ Kxh3 34. Kb1 b5 35. cxb5 c4 36. bxc4 Kg4 37. c5 Kf5 38. c6 Kf6 39. c7 Ke6 40. c8=Q+ Kd6 41. Qc6+ Ke5 42. Qd5+ Kxd5 43. b6 axb6 44. b3 Kc5 45. b4+ Kxb4 46. Kc2 Kc4 47. Kd2 Kd4 48. Kc1 Kc3 49. Kd1 Kd3 50. Kc1 Kc3 51. Kd1 Kd3 52. Kc1 Kc3 1/2-1/2

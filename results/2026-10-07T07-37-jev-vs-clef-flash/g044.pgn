@@ -1,0 +1,12 @@
+[Event "benchessmark 2026-10-07T07-37-jev-vs-clef-flash"]
+[Site "benchessmark"]
+[Date "2026.10.07"]
+[Round "44"]
+[White "Clef-flash (cloudflare/clef-flash)"]
+[Black "Jev (typesafe/jev-1.13-20260917)"]
+[Result "1/2-1/2"]
+[Opening "Caro-Kann Defense: Advance Variation"]
+[ECO "B12"]
+[Termination "threefold"]
+
+1. e4 c6 2. d4 d5 3. e5 Nf6 4. exf6 gxf6 5. Nf3 c5 6. dxc5 Qa5+ 7. c3 Qxc3+ 8. bxc3 Nc6 9. Bb2 Nd4 10. cxd4 Bg4 11. Qa4+ Bd7 12. Qxd7+ Kxd7 13. Ne5+ fxe5 14. dxe5 Ke6 15. Nc3 Kxe5 16. Nxd5+ Kxd5 17. Bxh8 Kxc5 18. Bd4+ Kxd4 19. O-O-O+ Kc3 20. Rd3+ Kc4 21. Rc3+ Kxc3 22. Bd3 Kxd3 23. Rd1+ Ke2 24. Rd2+ Ke1 25. Rd1+ Kxf2 26. Rd2+ Kf1 27. Rd1+ Kxg2 28. Rd2+ Kf1 29. Rd1+ Ke2 30. Rd2+ Kf1 31. Rd1+ Ke2 32. Rd2+ Kf1 1/2-1/2

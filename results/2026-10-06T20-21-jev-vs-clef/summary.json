@@ -1,0 +1,214 @@
+{
+  "run": "2026-10-06T20-21-jev-vs-clef",
+  "games": 100,
+  "errorGames": 0,
+  "unfinished": 0,
+  "a": {
+    "info": {
+      "id": "jev",
+      "name": "Jev",
+      "maker": "TypeSafe",
+      "slug": "typesafe/jev-1.13",
+      "color": "#5ad1b5",
+      "kind": "model"
+    },
+    "builds": [
+      "typesafe/jev-1.13-20260917"
+    ],
+    "games": 100,
+    "wins": 5,
+    "draws": 76,
+    "losses": 19,
+    "score": 43,
+    "scoreAsWhite": {
+      "points": 22.5,
+      "games": 50
+    },
+    "errors": 0,
+    "moves": 3476,
+    "graded": 3476,
+    "accuracy": 58.45100891290874,
+    "acpl": 105.5952243958573,
+    "per100": {
+      "inaccuracy": 4.142692750287687,
+      "mistake": 1.2658227848101267,
+      "blunder": 9.03337169159954
+    },
+    "bestRate": 0.28711162255466055,
+    "pOnBest": 0.18245397008055064,
+    "meanConfidence": 0.21454833141542035,
+    "tieRate": 0.04602991944764097,
+    "latency": {
+      "p50": 260,
+      "p95": 340
+    },
+    "inputTokensPerCall": 979.7039700805524,
+    "retries": 0,
+    "costUsd": 0.14302894200000046,
+    "costIsBilled": true,
+    "calibration": [
+      {
+        "range": [
+          0,
+          0.2
+        ],
+        "n": 2002,
+        "bestRate": 0.1933066933066933,
+        "meanDrop": 0.10561008991008987,
+        "pOnBest": 0.13089910089910103
+      },
+      {
+        "range": [
+          0.2,
+          0.4
+        ],
+        "n": 1016,
+        "bestRate": 0.35334645669291337,
+        "meanDrop": 0.1144840551181103,
+        "pOnBest": 0.20627952755905546
+      },
+      {
+        "range": [
+          0.4,
+          0.6
+        ],
+        "n": 373,
+        "bestRate": 0.5227882037533512,
+        "meanDrop": 0.09753914209115282,
+        "pOnBest": 0.32305630026809673
+      },
+      {
+        "range": [
+          0.6,
+          0.8
+        ],
+        "n": 81,
+        "bestRate": 0.654320987654321,
+        "meanDrop": 0.019412345679012344,
+        "pOnBest": 0.47629629629629644
+      },
+      {
+        "range": [
+          0.8,
+          1
+        ],
+        "n": 4,
+        "bestRate": 1,
+        "meanDrop": 0.00135,
+        "pOnBest": 0.8724999999999999
+      }
+    ]
+  },
+  "b": {
+    "info": {
+      "id": "clef",
+      "name": "Clef",
+      "maker": "Cloudflare",
+      "slug": "cloudflare/clef",
+      "color": "#f6821f",
+      "kind": "model"
+    },
+    "builds": [
+      "cloudflare/clef"
+    ],
+    "games": 100,
+    "wins": 19,
+    "draws": 76,
+    "losses": 5,
+    "score": 57,
+    "scoreAsWhite": {
+      "points": 29.5,
+      "games": 50
+    },
+    "errors": 0,
+    "moves": 3529,
+    "graded": 3529,
+    "accuracy": 63.479601807895705,
+    "acpl": 100.53301218475488,
+    "per100": {
+      "inaccuracy": 3.7971096627939924,
+      "mistake": 1.7285349957495042,
+      "blunder": 8.699348257296684
+    },
+    "bestRate": 0.3051856049872485,
+    "pOnBest": 0.20440903938792934,
+    "meanConfidence": 0.12889529611788023,
+    "tieRate": 0.000850099178237461,
+    "latency": {
+      "p50": 400,
+      "p95": 647
+    },
+    "inputTokensPerCall": 922.5293284216492,
+    "retries": 0,
+    "costUsd": 0.7813454399999997,
+    "costIsBilled": true,
+    "calibration": [
+      {
+        "range": [
+          0,
+          0.2
+        ],
+        "n": 2804,
+        "bestRate": 0.21005706134094151,
+        "meanDrop": 0.11693776747503565,
+        "pOnBest": 0.1158073823109842
+      },
+      {
+        "range": [
+          0.2,
+          0.4
+        ],
+        "n": 352,
+        "bestRate": 0.4914772727272727,
+        "meanDrop": 0.05566732954545455,
+        "pOnBest": 0.36803778409090904
+      },
+      {
+        "range": [
+          0.4,
+          0.6
+        ],
+        "n": 165,
+        "bestRate": 0.7454545454545455,
+        "meanDrop": 0.03445939393939395,
+        "pOnBest": 0.5599745454545457
+      },
+      {
+        "range": [
+          0.6,
+          0.8
+        ],
+        "n": 96,
+        "bestRate": 0.8541666666666666,
+        "meanDrop": 0.005437500000000001,
+        "pOnBest": 0.7208333333333332
+      },
+      {
+        "range": [
+          0.8,
+          1
+        ],
+        "n": 112,
+        "bestRate": 0.9821428571428571,
+        "meanDrop": 0.00768482142857143,
+        "pOnBest": 0.9418794642857141
+      }
+    ]
+  },
+  "elo": {
+    "score": 0.43,
+    "elo": -48.962560037161964,
+    "low": -82.27579395915244,
+    "high": -16.522846727689068,
+    "tie": false
+  },
+  "terminations": {
+    "checkmate": 24,
+    "threefold": 69,
+    "insufficient": 7
+  },
+  "engine": {
+    "name": "Stockfish 19",
+    "depth": 18
+  }
+}

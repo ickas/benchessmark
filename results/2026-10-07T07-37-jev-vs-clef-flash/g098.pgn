@@ -1,0 +1,12 @@
+[Event "benchessmark 2026-10-07T07-37-jev-vs-clef-flash"]
+[Site "benchessmark"]
+[Date "2026.10.07"]
+[Round "98"]
+[White "Clef-flash (cloudflare/clef-flash)"]
+[Black "Jev (typesafe/jev-1.13-20260917)"]
+[Result "1/2-1/2"]
+[Opening "Hungarian Opening"]
+[ECO "A00"]
+[Termination "threefold"]
+
+1. g3 Nf6 2. d4 d5 3. Nf3 Nc6 4. c4 dxc4 5. e4 Nxe4 6. Bxc4 Nxg3 7. hxg3 Qxd4 8. Nxd4 Nxd4 9. Qxd4 Bg4 10. O-O Bf3 11. Bxf7+ Kxf7 12. Qd5+ Bxd5 13. Nc3 Bxa2 14. Nxa2 Rd8 15. Nc3 Rd1 16. Rxd1 Ke6 17. Rxa7 c5 18. Rxb7 c4 19. Rxe7+ Kxe7 20. Rd7+ Kxd7 21. Bd2 Kc6 22. Be3 Bc5 23. Bxc5 Kxc5 24. Ne4+ Kd4 25. Nc3 Kd3 26. Nd5 c3 27. Nxc3 Kc2 28. Ne4 Kxb2 29. Nc3 Kxc3 30. Kf1 Rd8 31. Ke1 Rd1+ 32. Kxd1 Kd3 33. Ke1 Kc2 34. Ke2 Kc3 35. Ke3 Kc4 36. Kd2 Kb3 37. Kd3 Kb4 38. Kd4 Kb5 39. Kd5 Kb6 40. Kd6 Kb7 41. Kd7 Ka7 42. Kc6 Kb8 43. Kd5 Kc7 44. Kc4 Kc6 45. Kd3 Kd5 46. Kc3 Ke4 47. f3+ Kxf3 48. Kd4 Kxg3 49. Kd5 Kg4 50. Ke4 Kg3 51. Kd5 Kf4 52. Kd4 Kf3 53. Kd5 Kf4 54. Kc4 Ke4 55. Kc5 Kd3 56. Kd5 Kc3 57. Kd6 Kd4 58. Kc6 Kc4 59. Kd6 Kd4 60. Kc6 Kc4 61. Kd6 Kd4 1/2-1/2

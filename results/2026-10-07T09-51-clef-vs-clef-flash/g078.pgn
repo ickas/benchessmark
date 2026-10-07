@@ -1,0 +1,12 @@
+[Event "benchessmark 2026-10-07T09-51-clef-vs-clef-flash"]
+[Site "benchessmark"]
+[Date "2026.10.07"]
+[Round "78"]
+[White "Clef-flash (cloudflare/clef-flash)"]
+[Black "Clef (cloudflare/clef)"]
+[Result "1/2-1/2"]
+[Opening "Benoni Defense: Modern Variation"]
+[ECO "A60"]
+[Termination "threefold"]
+
+1. d4 Nf6 2. c4 c5 3. d5 e6 4. dxe6 dxe6 5. Qxd8+ Kxd8 6. Nf3 Be7 7. e4 e5 8. Nxe5 Nc6 9. Nxc6+ bxc6 10. e5 Ke8 11. exf6 Bxf6 12. Nc3 Bxc3+ 13. bxc3 Bd7 14. Bb2 Ke7 15. O-O-O Rhe8 16. Rxd7+ Kxd7 17. Bd3 Re1+ 18. Rxe1 Rc8 19. Re7+ Kxe7 20. Bxh7 Kf6 21. Bd3 Ke6 22. Bf5+ Kxf5 23. g4+ Kxg4 24. h3+ Kxh3 25. Kd1 Rd8+ 26. Ke1 Re8+ 27. Kd2 Rd8+ 28. Ke3 Re8+ 29. Kd2 Rd8+ 30. Ke3 Re8+ 31. Kd2 1/2-1/2

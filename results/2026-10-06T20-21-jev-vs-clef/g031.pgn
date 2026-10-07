@@ -1,0 +1,12 @@
+[Event "benchessmark 2026-10-06T20-21-jev-vs-clef"]
+[Site "benchessmark"]
+[Date "2026.10.06"]
+[Round "31"]
+[White "Jev (typesafe/jev-1.13-20260917)"]
+[Black "Clef (cloudflare/clef)"]
+[Result "0-1"]
+[Opening "Sicilian Defense: Nyezhmetdinov-Rossolimo Attack"]
+[ECO "B30"]
+[Termination "checkmate"]
+
+1. e4 c5 2. Nf3 Nc6 3. Bb5 d5 4. exd5 Qxd5 5. Bxc6+ bxc6 6. O-O Nf6 7. Nc3 e5 8. Nxe5 Qxe5 9. d4 cxd4 10. Qxd4 Qxd4 11. Re1+ Be7 12. Rxe7+ Kxe7 13. Nd5+ Nxd5 14. Bg5+ Nf6 15. Bxf6+ Kxf6 16. Re1 Re8 17. Rxe8 Qd1+ 18. Re1 Qxe1# 0-1

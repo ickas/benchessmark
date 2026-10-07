@@ -1,0 +1,12 @@
+[Event "benchessmark 2026-10-07T09-51-clef-vs-clef-flash"]
+[Site "benchessmark"]
+[Date "2026.10.07"]
+[Round "74"]
+[White "Clef-flash (cloudflare/clef-flash)"]
+[Black "Clef (cloudflare/clef)"]
+[Result "1/2-1/2"]
+[Opening "Grünfeld Defense"]
+[ECO "D80"]
+[Termination "threefold"]
+
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. Nxd5 Qxd5 6. Nf3 Bg7 7. e4 O-O 8. exd5 c5 9. dxc5 Nc6 10. dxc6 bxc6 11. Bd3 Bc3+ 12. bxc3 Ba6 13. O-O Bxd3 14. Qxd3 e6 15. Qxg6+ hxg6 16. Bb2 Kg7 17. c4+ Kg8 18. Nd4 Kg7 19. Nxe6+ Kg8 20. Nxf8 Kxf8 21. Bg7+ Kxg7 22. f3 Kg8 23. f4 f5 24. g3 Kf7 25. g4 fxg4 26. f5 gxf5 27. Rxf5+ Kg8 28. Rf8+ Rxf8 29. h3 gxh3 30. Kh1 h2 31. Kxh2 Rf2+ 32. Kg3 Rf3+ 33. Kxf3 Kf8 34. Ke4 Ke7 35. Kd3 Kd7 36. Kd4 Kc7 37. Kc3 Kb7 38. Rb1+ Ka8 39. Rb8+ Kxb8 40. Kb4 a5+ 41. Kxa5 Kb7 42. Kb4 Kc7 43. Kc3 Kb7 44. Kb4 Kc7 45. Kc3 Kb7 46. Kb4 1/2-1/2

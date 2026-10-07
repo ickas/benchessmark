@@ -1,0 +1,12 @@
+[Event "benchessmark 2026-10-07T07-37-jev-vs-clef-flash"]
+[Site "benchessmark"]
+[Date "2026.10.07"]
+[Round "41"]
+[White "Jev (typesafe/jev-1.13-20260917)"]
+[Black "Clef-flash (cloudflare/clef-flash)"]
+[Result "1/2-1/2"]
+[Opening "French Defense: Advance Variation"]
+[ECO "C02"]
+[Termination "threefold"]
+
+1. e4 e6 2. d4 d5 3. e5 Nf6 4. Nc3 c5 5. Nf3 cxd4 6. Nxd4 Nc6 7. Nxc6 bxc6 8. Bg5 Bb7 9. Bxf6 gxf6 10. Qxd5 exd5 11. O-O-O fxe5 12. Rxd5 cxd5 13. Bb5+ Bc6 14. Bxc6+ Qd7 15. Bxd7+ Kxd7 16. Rd1 Bh6+ 17. Rd2 Bxd2+ 18. Kxd2 e4 19. Nxe4 dxe4 20. Ke3 Ke6 21. Kxe4 f5+ 22. Kd4 Rhd8+ 23. Kc5 Rdc8+ 24. Kb5 Rcb8+ 25. Ka5 Rxb2 26. Ka6 Rxa2+ 27. Kb5 Rxc2 28. Ka5 Rxf2 29. Ka6 Rxg2 30. Kb7 Rxh2 31. Kxa8 Kd5 32. Kb7 Rb2+ 33. Kc7 Rc2+ 34. Kd7 Rc7+ 35. Kxc7 Kc4 36. Kd6 Kd3 37. Kd5 Kc3 38. Kc5 Kd3 39. Kb5 a6+ 40. Kxa6 Kc4 41. Kb6 Kd5 42. Kb7 Kc4 43. Ka6 Kd5 44. Kb7 Kc4 45. Ka6 Kd5 46. Kb7 1/2-1/2

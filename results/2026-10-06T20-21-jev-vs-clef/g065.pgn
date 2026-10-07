@@ -1,0 +1,12 @@
+[Event "benchessmark 2026-10-06T20-21-jev-vs-clef"]
+[Site "benchessmark"]
+[Date "2026.10.06"]
+[Round "65"]
+[White "Jev (typesafe/jev-1.13-20260917)"]
+[Black "Clef (cloudflare/clef)"]
+[Result "1/2-1/2"]
+[Opening "Queen's Pawn Game"]
+[ECO "D00"]
+[Termination "threefold"]
+
+1. d4 d5 2. e3 c5 3. Nc3 cxd4 4. exd4 Nf6 5. Nf3 e5 6. dxe5 Nc6 7. exf6 Qxf6 8. Nxd5 Bb4+ 9. Nxb4 Nxb4 10. Qe2+ Be6 11. Qxe6+ Qxe6+ 12. Kd1 O-O-O+ 13. Bd2 Rxd2+ 14. Kxd2 Rd8+ 15. Kc1 Qe3+ 16. fxe3 Nxa2+ 17. Rxa2 Rd1+ 18. Kxd1 Kd7 19. Ne5+ Kc7 20. Nxf7 Kd7 21. Ne5+ Kc7 22. Rxa7 Kd6 23. Nc4+ Kd7 24. Rxb7+ Kc8 25. Rc7+ Kxc7 26. Nd6 Kxd6 27. Ke2 Kd7 28. Kd3 Kc7 29. Kd4 Kd7 30. Bb5+ Kc7 31. Kd5 Kb7 32. Bc6+ Kc7 33. Kc5 Kc8 34. Bd7+ Kxd7 35. Rd1+ Kc7 36. Rd7+ Kxd7 37. Kd5 Kc7 38. Kc5 Kd7 39. Kd5 Kc7 40. Kc5 Kd7 1/2-1/2

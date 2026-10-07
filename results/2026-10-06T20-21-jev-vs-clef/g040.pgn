@@ -1,0 +1,12 @@
+[Event "benchessmark 2026-10-06T20-21-jev-vs-clef"]
+[Site "benchessmark"]
+[Date "2026.10.06"]
+[Round "40"]
+[White "Clef (cloudflare/clef)"]
+[Black "Jev (typesafe/jev-1.13-20260917)"]
+[Result "1/2-1/2"]
+[Opening "French Defense: Tarrasch Variation"]
+[ECO "C03"]
+[Termination "insufficient"]
+
+1. e4 e6 2. d4 d5 3. Nd2 dxe4 4. Nxe4 Nf6 5. Nxf6+ gxf6 6. Nf3 Qxd4 7. Qxd4 Nc6 8. Bd3 Be7 9. O-O O-O 10. Qg4+ Kh8 11. Qxe6 Bxe6 12. Be3 Nd4 13. Nxd4 Bxa2 14. Rxa2 Rfe8 15. Rxa7 Rxa7 16. Nf3 Ra1 17. Rxa1 Ra8 18. Rxa8+ Kg7 19. Bh6+ Kxh6 20. Nd4 Bb4 21. Nf5+ Kg6 22. Nd4+ Kg7 23. Ne6+ fxe6 24. Rg8+ Kxg8 25. Bxh7+ Kxh7 26. Kh1 Bc3 27. bxc3 c5 28. c4 b5 29. cxb5 c4 30. c3 e5 31. b6 e4 32. b7 e3 33. fxe3 Kg7 34. b8=Q Kf7 35. Qc7+ Ke6 36. e4 f5 37. exf5+ Kxf5 38. g4+ Kxg4 39. h3+ Kxh3 40. Qg3+ Kxg3 41. Kg1 Kf3 42. Kf1 Ke3 43. Ke1 Kd3 44. Kd1 Kxc3 45. Kc1 Kb3 46. Kd1 Kb2 47. Kd2 c3+ 48. Kd1 c2+ 49. Ke1 c1=Q+ 50. Ke2 Qd1+ 51. Kxd1 1/2-1/2

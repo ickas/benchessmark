@@ -1,0 +1,12 @@
+[Event "benchessmark 2026-10-07T07-37-jev-vs-clef-flash"]
+[Site "benchessmark"]
+[Date "2026.10.07"]
+[Round "7"]
+[White "Jev (typesafe/jev-1.13-20260917)"]
+[Black "Clef-flash (cloudflare/clef-flash)"]
+[Result "1/2-1/2"]
+[Opening "Italian Game: Two Knights Defense"]
+[ECO "C55"]
+[Termination "stalemate"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. O-O d5 5. exd5 Qxd5 6. Bxd5 Nxd5 7. Nc3 Nxc3 8. dxc3 e4 9. Ne5 Nxe5 10. Qd8+ Kxd8 11. Rd1+ Nd3 12. Rxd3+ exd3 13. cxd3 Bd7 14. Bg5+ Be7 15. Bxe7+ Kxe7 16. Re1+ Kd6 17. Re6+ fxe6 18. d4 e5 19. dxe5+ Kxe5 20. f4+ Kxf4 21. g3+ Ke3 22. Kf1 Bh3+ 23. Ke1 Kd3 24. Kd1 Bg4+ 25. Kc1 Kc4 26. b3+ Kxc3 27. Kb1 Bf5+ 28. Ka1 Bd3 29. b4 Kxb4 30. a3+ Kxa3 31. h3 Be4 32. h4 Bd3 33. h5 Be4 34. h6 gxh6 35. g4 Bd3 36. g5 hxg5 1/2-1/2

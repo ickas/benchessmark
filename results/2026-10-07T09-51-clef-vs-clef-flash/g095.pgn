@@ -1,0 +1,12 @@
+[Event "benchessmark 2026-10-07T09-51-clef-vs-clef-flash"]
+[Site "benchessmark"]
+[Date "2026.10.07"]
+[Round "95"]
+[White "Clef (cloudflare/clef)"]
+[Black "Clef-flash (cloudflare/clef-flash)"]
+[Result "1/2-1/2"]
+[Opening "Zukertort Opening"]
+[ECO "A05"]
+[Termination "threefold"]
+
+1. Nf3 Nf6 2. c4 d5 3. cxd5 Nxd5 4. d4 Nf6 5. e4 Nxe4 6. d5 Qxd5 7. Qxd5 Nf6 8. Bb5+ c6 9. Qxc6+ bxc6 10. Bxc6+ Nxc6 11. O-O e6 12. Nc3 e5 13. Nxe5 Nxe5 14. Be3 Nf3+ 15. gxf3 Nd5 16. Nxd5 f5 17. Nf6+ gxf6 18. f4 Rg8+ 19. Kh1 Rg1+ 20. Rxg1 Bb7+ 21. Rg2 Bxg2+ 22. Kxg2 O-O-O 23. Rc1+ Bc5 24. Bxc5 Rg8+ 25. Kf1 Rg1+ 26. Kxg1 Kb7 27. Bxa7 Kxa7 28. Rc7+ Kb6 29. Rc6+ Kxc6 30. Kf1 Kd5 31. Ke2 Kc4 32. b3+ Kd4 33. f3 Kc3 34. Ke3 Kb4 35. a3+ Kxa3 36. Kd3 Kxb3 37. Kd4 Kb4 38. Kd5 Kc3 39. Kc6 Kd4 40. Kd6 Kc3 41. Kc5 Kd3 42. Kd5 Kc3 43. Ke6 Kd4 44. Kxf6 Kc3 45. Kxf5 Kd4 46. Kf6 Kc3 47. Ke5 Kd3 48. f5 Ke3 49. f6 Kxf3 50. f7 Ke3 51. f8=Q Kd3 52. Qd6+ Kc4 53. Qe6+ Kd3 54. Qd6+ Kc4 55. Qe6+ Kd3 56. Qd6+ 1/2-1/2

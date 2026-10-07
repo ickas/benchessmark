@@ -1,0 +1,12 @@
+[Event "benchessmark 2026-10-06T20-21-jev-vs-clef"]
+[Site "benchessmark"]
+[Date "2026.10.06"]
+[Round "6"]
+[White "Clef (cloudflare/clef)"]
+[Black "Jev (typesafe/jev-1.13-20260917)"]
+[Result "1/2-1/2"]
+[Opening "Italian Game: Giuoco Piano"]
+[ECO "C50"]
+[Termination "threefold"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. d4 exd4 5. Nxd4 Bxd4 6. Qxd4 Nxd4 7. O-O Nxc2 8. Nc3 Nxa1 9. Rd1 Nc2 10. Rxd7 Qxd7 11. Bxf7+ Kxf7 12. e5 Qd1+ 13. Nxd1 Ne3 14. Nxe3 Ke7 15. Nd5+ Kd7 16. e6+ Kxe6 17. Nxc7+ Kd6 18. Nxa8 Kc6 19. Nb6 Kxb6 20. Be3+ Kc7 21. Bf4+ Kd7 22. Be3 Ke7 23. Bg5+ Kf8 24. Be7+ Kxe7 25. Kf1 Kf8 26. Ke1 Nf6 27. Kf1 Ne4 28. f3 Ng3+ 29. hxg3 Bg4 30. fxg4 Rg8 31. Kg1 Rh8 32. Kh1 Rg8 33. Kg1 Rh8 34. Kf1 Rg8 35. Ke1 Rh8 36. Kf1 1/2-1/2

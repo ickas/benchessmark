@@ -1,0 +1,12 @@
+[Event "benchessmark 2026-10-07T09-51-clef-vs-clef-flash"]
+[Site "benchessmark"]
+[Date "2026.10.07"]
+[Round "63"]
+[White "Clef (cloudflare/clef)"]
+[Black "Clef-flash (cloudflare/clef-flash)"]
+[Result "1/2-1/2"]
+[Opening "Queen's Pawn Game: Accelerated London System"]
+[ECO "D00"]
+[Termination "threefold"]
+
+1. d4 d5 2. Bf4 Nf6 3. e4 dxe4 4. Nf3 exf3 5. Qxf3 Qxd4 6. Nc3 Qxc3+ 7. Qxc3 e5 8. Qxe5+ Be7 9. Qxe7+ Kxe7 10. O-O-O Nc6 11. Re1+ Ne5 12. Bxe5 Nd5 13. Bc3+ Ne3 14. fxe3 f5 15. e4 fxe4 16. Rxe4+ Be6 17. Rxe6+ Kxe6 18. Bc4+ Kd6 19. Rd1+ Ke7 20. Re1+ Kd6 21. Rd1+ Ke7 22. Re1+ Kd6 23. Rd1+ 1/2-1/2

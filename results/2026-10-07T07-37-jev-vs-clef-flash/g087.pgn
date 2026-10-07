@@ -1,0 +1,12 @@
+[Event "benchessmark 2026-10-07T07-37-jev-vs-clef-flash"]
+[Site "benchessmark"]
+[Date "2026.10.07"]
+[Round "87"]
+[White "Jev (typesafe/jev-1.13-20260917)"]
+[Black "Clef-flash (cloudflare/clef-flash)"]
+[Result "1/2-1/2"]
+[Opening "English Opening: King's English Variation"]
+[ECO "A20"]
+[Termination "threefold"]
+
+1. c4 e5 2. Nf3 Nf6 3. Nc3 d5 4. cxd5 Nxd5 5. Nxd5 Qxd5 6. Qb3 Qxb3 7. axb3 Nc6 8. e4 Bd7 9. Nxe5 Nxe5 10. Rxa7 Rxa7 11. d4 Nf3+ 12. gxf3 Bb4+ 13. Kd1 O-O 14. Kc2 Bc3 15. Kxc3 c5 16. dxc5 f5 17. exf5 Bxf5 18. Bc4+ Be6 19. Bxe6+ Rf7 20. Bxf7+ Kxf7 21. Rf1 Ke6 22. Re1+ Kd5 23. Rd1+ Kxc5 24. Rd5+ Kxd5 25. Kb4 Ra4+ 26. bxa4 Kd4 27. Be3+ Kd3 28. Bd4 Kxd4 29. Ka3 Kc4 30. b3+ Kd3 31. b4 Kc4 32. b5 Kd4 33. b6 Kc3 34. a5 Kd4 35. a6 bxa6 36. b7 Kc3 37. b8=Q Kd4 38. Qd6+ Kc3 39. Qd3+ Kxd3 40. Kb4 a5+ 41. Kxa5 Kd4 42. f4 Kc3 43. f5 Kd4 44. f6 gxf6 45. Kb4 Kd3 46. Kc5 Ke4 47. Kb4 Kd3 48. Kc5 Ke4 49. Kb4 Kd3 1/2-1/2

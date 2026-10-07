@@ -1,0 +1,12 @@
+[Event "benchessmark 2026-10-07T09-51-clef-vs-clef-flash"]
+[Site "benchessmark"]
+[Date "2026.10.07"]
+[Round "29"]
+[White "Clef (cloudflare/clef)"]
+[Black "Clef-flash (cloudflare/clef-flash)"]
+[Result "1/2-1/2"]
+[Opening "Sicilian Defense: French Variation"]
+[ECO "B40"]
+[Termination "insufficient"]
+
+1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nf6 5. e5 d5 6. exd6 Bxd6 7. c3 O-O 8. Nf3 Nc6 9. Qxd6 Qxd6 10. Bd3 Qe5+ 11. Nxe5 Nxe5 12. O-O Nxd3 13. Nd2 Nxc1 14. Raxc1 e5 15. c4 e4 16. Nxe4 Nxe4 17. c5 Nxc5 18. Rxc5 Bd7 19. Rfc1 Bc6 20. Rxc6 bxc6 21. Rxc6 Rfc8 22. Rxc8+ Rxc8 23. Kf1 Rc1+ 24. Ke2 Re1+ 25. Kxe1 f5 26. f3 f4 27. g3 fxg3 28. hxg3 Kf7 29. Kf2 Ke6 30. Ke3 Kd5 31. Kd3 Kc5 32. b4+ Kxb4 33. a3+ Kxa3 34. Kd4 Kb4 35. f4 Ka3 36. f5 Kb4 37. f6 gxf6 38. Kd5 Kc3 39. Kc6 Kd4 40. Kd6 Kc3 41. g4 Kd4 42. g5 fxg5 43. Kd7 Kc3 44. Ke6 Kd4 45. Kf5 Kc3 46. Kxg5 h6+ 47. Kxh6 Kd4 48. Kg6 Kc3 49. Kf5 Kd4 50. Ke6 Kc3 51. Kd5 Kd3 52. Ke5 Kc4 53. Ke4 Kc5 54. Kd3 Kd5 55. Kc3 Kc5 56. Kb3 Kd4 57. Kb4 a5+ 58. Kxa5 1/2-1/2

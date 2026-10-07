@@ -1,0 +1,12 @@
+[Event "benchessmark 2026-10-07T09-51-clef-vs-clef-flash"]
+[Site "benchessmark"]
+[Date "2026.10.07"]
+[Round "20"]
+[White "Clef-flash (cloudflare/clef-flash)"]
+[Black "Clef (cloudflare/clef)"]
+[Result "1/2-1/2"]
+[Opening "Vienna Game"]
+[ECO "C25"]
+[Termination "threefold"]
+
+1. e4 e5 2. Nc3 d5 3. exd5 Qxd5 4. Nxd5 Nf6 5. Nxf6+ gxf6 6. Nf3 Be7 7. d4 exd4 8. Qxd4 O-O 9. c4 Nc6 10. Qg4+ Bxg4 11. Bd3 Bxf3 12. gxf3 Bb4+ 13. Bd2 Bxd2+ 14. Kxd2 Ne5 15. Bxh7+ Kxh7 16. c5 Nxf3+ 17. Kc3 Kg7 18. Rhg1+ Nxg1 19. Rxg1+ Kh6 20. Rg6+ Kxg6 21. Kd4 Rfd8+ 22. Ke3 Rd3+ 23. Kxd3 Rd8+ 24. Kc4 Rd4+ 25. Kxd4 Kf5 26. Kd5 c6+ 27. Kd6 Ke4 28. f3+ Kxf3 29. Kc7 Ke3 30. Kxb7 Kd3 31. Kxc6 Kc4 32. b3+ Kd3 33. Kd5 Kc3 34. Kd6 Kd3 35. Kc7 Kc3 36. Kd6 Kd3 37. Kc7 Kc3 38. Kd6 1/2-1/2

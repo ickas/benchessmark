@@ -1,0 +1,12 @@
+[Event "benchessmark 2026-10-07T07-37-jev-vs-clef-flash"]
+[Site "benchessmark"]
+[Date "2026.10.07"]
+[Round "67"]
+[White "Jev (typesafe/jev-1.13-20260917)"]
+[Black "Clef-flash (cloudflare/clef-flash)"]
+[Result "1/2-1/2"]
+[Opening "Nimzo-Indian Defense"]
+[ECO "E20"]
+[Termination "threefold"]
+
+1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. a3 Bxc3+ 5. bxc3 O-O 6. Nf3 d5 7. cxd5 exd5 8. e4 dxe4 9. Ne5 Qxd4 10. Qxd4 Nc6 11. Nxc6 bxc6 12. Qxf6 gxf6 13. Bd3 exd3 14. O-O Bb7 15. Rd1 c5 16. Rxd3 Bxg2 17. Kxg2 c4 18. Rg3+ Kh8 19. Rg8+ Kxg8 20. Bh6 f5 21. Bxf8 Kxf8 22. Rf1 Ke8 23. Re1+ Kd7 24. Re7+ Kxe7 25. Kf3 Kf6 26. Kf4 Ke6 27. Kg5 f6+ 28. Kf4 Kd5 29. f3 Ke6 30. Ke3 f4+ 31. Kxf4 Kd5 32. Ke3 Re8+ 33. Kd2 Re2+ 34. Kxe2 f5 35. f4 Ke4 36. Kd2 Kxf4 37. Kc2 Ke3 38. Kb2 Kd3 39. Kc1 Kxc3 40. Kb1 Kd2 41. Ka1 Kc3 42. Kb1 Kd2 43. Ka1 Kc3 44. Kb1 1/2-1/2

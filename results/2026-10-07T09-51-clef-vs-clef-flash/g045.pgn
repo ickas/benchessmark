@@ -1,0 +1,12 @@
+[Event "benchessmark 2026-10-07T09-51-clef-vs-clef-flash"]
+[Site "benchessmark"]
+[Date "2026.10.07"]
+[Round "45"]
+[White "Clef (cloudflare/clef)"]
+[Black "Clef-flash (cloudflare/clef-flash)"]
+[Result "1/2-1/2"]
+[Opening "Caro-Kann Defense"]
+[ECO "B15"]
+[Termination "threefold"]
+
+1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Bf5 5. Nf3 Bxe4 6. d5 cxd5 7. Qxd5 Bxd5 8. Bb5+ Nc6 9. Bxc6+ bxc6 10. O-O Nf6 11. Be3 Bxf3 12. gxf3 e5 13. f4 exf4 14. Bxf4 Nd5 15. Rfe1+ Ne3 16. Bxe3 Qg5+ 17. Bxg5+ Be7 18. Bxe7 c5 19. Bd6+ Kd8 20. Be7+ Kc7 21. Bd6+ Kxd6 22. Red1+ Kc6 23. Rd6+ Kxd6 24. Rd1+ Kc7 25. Rd7+ Kxd7 26. Kf1 Kc6 27. Ke2 Rhe8+ 28. Kd1 Red8+ 29. Ke2 Re8+ 30. Kd1 Red8+ 31. Ke2 Re8+ 1/2-1/2

@@ -1,0 +1,12 @@
+[Event "benchessmark 2026-10-07T09-51-clef-vs-clef-flash"]
+[Site "benchessmark"]
+[Date "2026.10.07"]
+[Round "92"]
+[White "Clef-flash (cloudflare/clef-flash)"]
+[Black "Clef (cloudflare/clef)"]
+[Result "1/2-1/2"]
+[Opening "English Opening: Anglo-Indian Defense, Hedgehog System"]
+[ECO "A17"]
+[Termination "threefold"]
+
+1. c4 Nf6 2. Nc3 e6 3. d4 d5 4. cxd5 exd5 5. Nf3 c5 6. dxc5 Bxc5 7. Nxd5 Nxd5 8. Qxd5 Qxd5 9. e4 Qxe4+ 10. Be3 Bxe3 11. fxe3 Qxe3+ 12. Be2 Qxe2+ 13. Kxe2 O-O 14. Nd4 Re8+ 15. Ne6 Bxe6 16. Ke3 Bd5+ 17. Kd4 Nc6+ 18. Kxd5 Red8+ 19. Kc4 Ne5+ 20. Kc5 Nd7+ 21. Kd6 Nb6+ 22. Ke5 Nd7+ 23. Kd6 Nb6+ 24. Kc5 Nd7+ 25. Kd6 1/2-1/2

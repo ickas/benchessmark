@@ -1,0 +1,12 @@
+[Event "benchessmark 2026-10-07T07-37-jev-vs-clef-flash"]
+[Site "benchessmark"]
+[Date "2026.10.07"]
+[Round "70"]
+[White "Clef-flash (cloudflare/clef-flash)"]
+[Black "Jev (typesafe/jev-1.13-20260917)"]
+[Result "1-0"]
+[Opening "Queen's Indian Defense"]
+[ECO "E12"]
+[Termination "checkmate"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e4 Bb7 5. Nc3 Nc6 6. d5 exd5 7. exd5 Nxd5 8. cxd5 Nd4 9. Nxd4 Bxd5 10. Nxd5 Qe7+ 11. Nxe7 Bxe7 12. Nf3 Bb4+ 13. Bd2 Bxd2+ 14. Kxd2 O-O 15. Nd4 d5 16. Nf3 d4 17. Nxd4 Rfd8 18. Bd3 Rxd4 19. f3 Rxd3+ 20. Kxd3 Rd8+ 21. Kc4 b5+ 22. Kxb5 Rb8+ 23. Kc6 Rb6+ 24. Kxc7 Rc6+ 25. Kxc6 Kf8 26. Qd8# 1-0

@@ -1,0 +1,12 @@
+[Event "benchessmark 2026-10-07T09-51-clef-vs-clef-flash"]
+[Site "benchessmark"]
+[Date "2026.10.07"]
+[Round "58"]
+[White "Clef-flash (cloudflare/clef-flash)"]
+[Black "Clef (cloudflare/clef)"]
+[Result "1/2-1/2"]
+[Opening "Queen's Gambit Accepted"]
+[ECO "D20"]
+[Termination "threefold"]
+
+1. d4 d5 2. c4 dxc4 3. e4 e5 4. dxe5 Qxd1+ 5. Kxd1 Nf6 6. Bxc4 Nc6 7. exf6 gxf6 8. Nf3 Bg7 9. Nc3 O-O 10. e5 fxe5 11. Nxe5 Bxe5 12. Bxf7+ Kxf7 13. Bd2 Bxc3 14. bxc3 Bg4+ 15. f3 Bxf3+ 16. gxf3 Kg7 17. Bh6+ Kxh6 18. c4 Rfd8+ 19. Kc2 Nd4+ 20. Kd3 Nxf3+ 21. Kc2 Nd4+ 22. Kd3 Nb5+ 23. Kc2 Nd4+ 24. Kd3 Nb5+ 25. Kc2 Nd4+ 1/2-1/2

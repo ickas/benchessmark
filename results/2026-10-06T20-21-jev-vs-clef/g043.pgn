@@ -1,0 +1,12 @@
+[Event "benchessmark 2026-10-06T20-21-jev-vs-clef"]
+[Site "benchessmark"]
+[Date "2026.10.06"]
+[Round "43"]
+[White "Jev (typesafe/jev-1.13-20260917)"]
+[Black "Clef (cloudflare/clef)"]
+[Result "1/2-1/2"]
+[Opening "Caro-Kann Defense: Advance Variation"]
+[ECO "B12"]
+[Termination "threefold"]
+
+1. e4 c6 2. d4 d5 3. e5 Nf6 4. exf6 exf6 5. Nf3 Bb4+ 6. Bd2 Bxd2+ 7. Qxd2 O-O 8. Nc3 c5 9. dxc5 Nc6 10. Qxd5 Qxd5 11. Nxd5 Re8+ 12. Ne7+ Nxe7 13. O-O-O Nc6 14. Rd8 Rxd8 15. Ba6 bxa6 16. Ne5 Nxe5 17. c6 Nxc6 18. Rd1 Rxd1+ 19. Kxd1 Bg4+ 20. Kc1 Be6 21. Kd2 Rd8+ 22. Kc1 Rd1+ 23. Kxd1 Bg4+ 24. Kc1 Be6 25. Kd1 Bg4+ 26. Kc1 Be6 27. Kd1 1/2-1/2

@@ -1,0 +1,12 @@
+[Event "benchessmark 2026-10-06T20-21-jev-vs-clef"]
+[Site "benchessmark"]
+[Date "2026.10.06"]
+[Round "79"]
+[White "Jev (typesafe/jev-1.13-20260917)"]
+[Black "Clef (cloudflare/clef)"]
+[Result "1/2-1/2"]
+[Opening "Benko Gambit"]
+[ECO "A57"]
+[Termination "threefold"]
+
+1. d4 Nf6 2. c4 c5 3. d5 b5 4. cxb5 d6 5. Nc3 e5 6. dxe6 fxe6 7. Nf3 Bb7 8. Qxd6 Qxd6 9. Nd5 exd5 10. Be3 d4 11. Bxd4 cxd4 12. O-O-O Bxf3 13. gxf3 Qc6+ 14. bxc6 Nxc6 15. Rxd4 Nxd4 16. Kd1 Nxf3 17. exf3 O-O-O+ 18. Kc1 Rd1+ 19. Kxd1 Kb7 20. Ba6+ Kxa6 21. Re1 Nd5 22. Re6+ Kb7 23. Rb6+ Kxb6 24. Kc1 Bd6 25. Kd2 Bb4+ 26. Kc2 Ne3+ 27. fxe3 Rc8+ 28. Kd3 Rc3+ 29. bxc3 Bxc3 30. Kxc3 Kc6 31. Kd4 Kd6 32. Kc4 Kc6 33. Kb4 a5+ 34. Kxa5 Kc5 35. e4 Kc6 36. e5 Kd5 37. e6 Kxe6 38. Ka6 Kd6 39. Ka7 Kc7 40. Ka8 Kc6 41. Ka7 Kd6 42. Ka6 Kc6 43. Ka7 Kd6 44. Ka6 Kc6 45. Ka7 1/2-1/2

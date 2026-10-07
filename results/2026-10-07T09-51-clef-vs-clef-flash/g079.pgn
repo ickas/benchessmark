@@ -1,0 +1,12 @@
+[Event "benchessmark 2026-10-07T09-51-clef-vs-clef-flash"]
+[Site "benchessmark"]
+[Date "2026.10.07"]
+[Round "79"]
+[White "Clef (cloudflare/clef)"]
+[Black "Clef-flash (cloudflare/clef-flash)"]
+[Result "1/2-1/2"]
+[Opening "Benko Gambit"]
+[ECO "A57"]
+[Termination "threefold"]
+
+1. d4 Nf6 2. c4 c5 3. d5 b5 4. cxb5 Nxd5 5. Qxd5 Qa5+ 6. Nc3 Qxc3+ 7. bxc3 Bb7 8. Qxb7 Nc6 9. bxc6 dxc6 10. Qxc6+ Kd8 11. Qxa8+ Kc7 12. Qxf8 Rxf8 13. Nf3 e5 14. e4 f5 15. exf5 Rxf5 16. Nxe5 Rxe5+ 17. Kd1 Rd5+ 18. Kc2 Rd2+ 19. Kxd2 Kd6 20. Kd3 c4+ 21. Kxc4 Kc6 22. Kb3 Kd5 23. c4+ Kc5 24. Be3+ Kd6 25. c5+ Kc7 26. Bf4+ Kd7 27. c6+ Kxc6 28. Bb5+ Kxb5 29. a4+ Kc6 30. Rhc1+ Kd5 31. Rd1+ Kc6 32. Rdc1+ Kd5 33. Rd1+ Kc6 34. Rdc1+ 1/2-1/2

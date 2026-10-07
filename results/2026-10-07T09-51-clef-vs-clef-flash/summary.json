@@ -1,0 +1,214 @@
+{
+  "run": "2026-10-07T09-51-clef-vs-clef-flash",
+  "games": 100,
+  "errorGames": 0,
+  "unfinished": 0,
+  "a": {
+    "info": {
+      "id": "clef",
+      "name": "Clef",
+      "maker": "Cloudflare",
+      "slug": "cloudflare/clef",
+      "color": "#f6821f",
+      "kind": "model"
+    },
+    "builds": [
+      "cloudflare/clef"
+    ],
+    "games": 100,
+    "wins": 8,
+    "draws": 80,
+    "losses": 12,
+    "score": 48,
+    "scoreAsWhite": {
+      "points": 24,
+      "games": 50
+    },
+    "errors": 0,
+    "moves": 3628,
+    "graded": 3628,
+    "accuracy": 61.70712965679914,
+    "acpl": 108.24393605292173,
+    "per100": {
+      "inaccuracy": 4.134509371554575,
+      "mistake": 1.3781697905181918,
+      "blunder": 9.840132304299889
+    },
+    "bestRate": 0.3183572216097023,
+    "pOnBest": 0.20646041896361642,
+    "meanConfidence": 0.12266990077177509,
+    "tieRate": 0.0002756339581036384,
+    "latency": {
+      "p50": 423,
+      "p95": 710
+    },
+    "inputTokensPerCall": 905.8690738699007,
+    "retries": 1,
+    "costUsd": 0.7887583200000016,
+    "costIsBilled": true,
+    "calibration": [
+      {
+        "range": [
+          0,
+          0.2
+        ],
+        "n": 2955,
+        "bestRate": 0.22944162436548224,
+        "meanDrop": 0.1285416243654824,
+        "pOnBest": 0.12396991539763134
+      },
+      {
+        "range": [
+          0.2,
+          0.4
+        ],
+        "n": 325,
+        "bestRate": 0.5292307692307693,
+        "meanDrop": 0.047618461538461505,
+        "pOnBest": 0.3707098461538463
+      },
+      {
+        "range": [
+          0.4,
+          0.6
+        ],
+        "n": 135,
+        "bestRate": 0.7481481481481481,
+        "meanDrop": 0.024411851851851858,
+        "pOnBest": 0.559842962962963
+      },
+      {
+        "range": [
+          0.6,
+          0.8
+        ],
+        "n": 87,
+        "bestRate": 0.9540229885057471,
+        "meanDrop": 0.0024080459770114944,
+        "pOnBest": 0.8088298850574711
+      },
+      {
+        "range": [
+          0.8,
+          1
+        ],
+        "n": 126,
+        "bestRate": 0.9603174603174603,
+        "meanDrop": 0.011888095238095241,
+        "pOnBest": 0.922853968253968
+      }
+    ]
+  },
+  "b": {
+    "info": {
+      "id": "clef-flash",
+      "name": "Clef-flash",
+      "maker": "Cloudflare",
+      "slug": "cloudflare/clef-flash",
+      "color": "#f9b36b",
+      "kind": "model"
+    },
+    "builds": [
+      "cloudflare/clef-flash"
+    ],
+    "games": 100,
+    "wins": 12,
+    "draws": 80,
+    "losses": 8,
+    "score": 52,
+    "scoreAsWhite": {
+      "points": 26,
+      "games": 50
+    },
+    "errors": 0,
+    "moves": 3626,
+    "graded": 3626,
+    "accuracy": 62.59998439361603,
+    "acpl": 106.99834528405957,
+    "per100": {
+      "inaccuracy": 3.861003861003861,
+      "mistake": 1.4340871483728626,
+      "blunder": 10.314396028681744
+    },
+    "bestRate": 0.3168781025923883,
+    "pOnBest": 0.21130308880308857,
+    "meanConfidence": 0.11569542195256438,
+    "tieRate": 0.001654715940430226,
+    "latency": {
+      "p50": 330,
+      "p95": 822
+    },
+    "inputTokensPerCall": 844.5592939878654,
+    "retries": 15,
+    "costUsd": 0.27561348000000024,
+    "costIsBilled": true,
+    "calibration": [
+      {
+        "range": [
+          0,
+          0.2
+        ],
+        "n": 2937,
+        "bestRate": 0.21824991487912837,
+        "meanDrop": 0.12520892066734784,
+        "pOnBest": 0.12401242764725941
+      },
+      {
+        "range": [
+          0.2,
+          0.4
+        ],
+        "n": 298,
+        "bestRate": 0.5771812080536913,
+        "meanDrop": 0.07134966442953022,
+        "pOnBest": 0.38897315436241603
+      },
+      {
+        "range": [
+          0.4,
+          0.6
+        ],
+        "n": 177,
+        "bestRate": 0.7401129943502824,
+        "meanDrop": 0.031774576271186426,
+        "pOnBest": 0.5672073446327686
+      },
+      {
+        "range": [
+          0.6,
+          0.8
+        ],
+        "n": 124,
+        "bestRate": 0.9274193548387096,
+        "meanDrop": 0.005368548387096771,
+        "pOnBest": 0.8030983870967744
+      },
+      {
+        "range": [
+          0.8,
+          1
+        ],
+        "n": 90,
+        "bestRate": 1,
+        "meanDrop": 0.004906666666666667,
+        "pOnBest": 0.9562955555555553
+      }
+    ]
+  },
+  "elo": {
+    "score": 0.48,
+    "elo": -13.904842503684801,
+    "low": -44.62604436985643,
+    "high": 16.600014553703986,
+    "tie": true
+  },
+  "terminations": {
+    "checkmate": 20,
+    "threefold": 72,
+    "insufficient": 8
+  },
+  "engine": {
+    "name": "Stockfish 19",
+    "depth": 18
+  }
+}

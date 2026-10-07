@@ -1,0 +1,12 @@
+[Event "benchessmark 2026-10-07T09-51-clef-vs-clef-flash"]
+[Site "benchessmark"]
+[Date "2026.10.07"]
+[Round "12"]
+[White "Clef-flash (cloudflare/clef-flash)"]
+[Black "Clef (cloudflare/clef)"]
+[Result "1/2-1/2"]
+[Opening "Four Knights Game"]
+[ECO "C47"]
+[Termination "threefold"]
+
+1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Qxd4 Nxd4 6. Nxd4 d5 7. exd5 Nxd5 8. Nxd5 Qxd5 9. Bb5+ Qxb5 10. Nxb5 Bb4+ 11. c3 Bxc3+ 12. bxc3 O-O 13. O-O c5 14. Nxa7 Rxa7 15. Bb2 Bd7 16. c4 b5 17. cxb5 Bxb5 18. Bxg7 Kxg7 19. f3 Bxf1 20. Rxf1 Rxa2 21. f4 Rxg2+ 22. Kxg2 Rg8 23. f5 Kf6+ 24. Kf3 Kxf5 25. Ke3+ Ke6 26. Rxf7 Kxf7 27. Kf4 Rg4+ 28. Kxg4 h5+ 29. Kxh5 Ke6 30. Kg4 Kd5 31. Kf3 Kc4 32. Ke4 Kb4 33. Kd5 c4 34. Kc6 c3 35. Kd5 c2 36. Kc6 c1=Q+ 37. Kd5 Qd1+ 38. Ke4 Qd4+ 39. Kxd4 Ka4 40. Kc3 Ka3 41. Kd4 Ka4 42. Kc3 Ka3 43. Kd4 Ka4 1/2-1/2

@@ -1,0 +1,12 @@
+[Event "benchessmark 2026-10-06T20-21-jev-vs-clef"]
+[Site "benchessmark"]
+[Date "2026.10.06"]
+[Round "14"]
+[White "Clef (cloudflare/clef)"]
+[Black "Jev (typesafe/jev-1.13-20260917)"]
+[Result "1/2-1/2"]
+[Opening "Petrov's Defense"]
+[ECO "C42"]
+[Termination "insufficient"]
+
+1. e4 e5 2. Nf3 Nf6 3. d4 exd4 4. Nxd4 Nxe4 5. Nf3 Nxf2 6. Kxf2 Qh4+ 7. Nxh4 Bc5+ 8. Qd4 Bxd4+ 9. Ke1 O-O 10. Nf3 Bc3+ 11. bxc3 Re8+ 12. Be3 Rxe3+ 13. Be2 Rxe2+ 14. Kxe2 Nc6 15. Nbd2 Nd4+ 16. cxd4 d5 17. c4 dxc4 18. Nxc4 Bg4 19. g3 Bxf3+ 20. Kxf3 Re8 21. Rhe1 Rxe1 22. Rxe1 Kf8 23. Re8+ Kxe8 24. Nd6+ cxd6 25. d5 Kd7 26. Ke4 f5+ 27. Kxf5 g6+ 28. Ke4 Ke7 29. Kd4 Kf6 30. Ke3 Ke5 31. Kd3 Kxd5 32. Kc3 Kc5 33. Kd3 Kb4 34. a3+ Kxa3 35. Kd4 Kb3 36. Kd5 Kc2 37. Kxd6 Kd1 38. Ke5 Ke2 39. Kd5 Kd3 40. Kd6 Kd2 41. Kd5 Kc3 42. Kc5 b6+ 43. Kc6 Kd4 44. Kd6 Kc4 45. Kd7 Kd3 46. Ke6 Kd4 47. Kf6 Kd3 48. Kg5 h6+ 49. Kxh6 b5 50. Kxg6 b4 51. Kf5 b3 52. g4 b2 53. h3 b1=Q 54. Ke5 Qe1+ 55. Kd6 Qe5+ 56. Kxe5 Kd2 57. h4 Kc3 58. h5 Kb4 59. h6 Kc5 60. h7 Kc6 61. h8=Q Kd7 62. Qh7+ Kd8 63. Qg8+ Kc7 64. Qg7+ Kc8 65. Qxa7 Kd8 66. Qd4+ Kc8 67. Qd7+ Kxd7 68. Kd5 Kc7 69. g5 Kd7 70. g6 Kd8 71. g7 Ke7 72. g8=Q Kd7 73. Qg7+ Kd8 74. Qd7+ Kxd7 1/2-1/2

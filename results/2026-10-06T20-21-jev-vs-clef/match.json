@@ -1,0 +1,68 @@
+{
+  "schema": "benchessmark/match@1",
+  "run": "2026-10-06T20-21-jev-vs-clef",
+  "players": [
+    {
+      "id": "jev",
+      "name": "Jev",
+      "maker": "TypeSafe",
+      "slug": "typesafe/jev-1.13",
+      "color": "#5ad1b5",
+      "kind": "model"
+    },
+    {
+      "id": "clef",
+      "name": "Clef",
+      "maker": "Cloudflare",
+      "slug": "cloudflare/clef",
+      "color": "#f6821f",
+      "kind": "model"
+    }
+  ],
+  "setup": {
+    "transport": "openrouter",
+    "state": "fen+board+moves",
+    "instructions": "Pick the best move for {side} in this position.",
+    "options": "uci→san",
+    "pick": "top, seeded tie",
+    "openings": "data/openings.json",
+    "plyCap": 300,
+    "timeoutMs": 60000,
+    "retries": 5,
+    "minIntervalMs": 0,
+    "seed": 1
+  },
+  "setupHash": "273b9f",
+  "differences": [
+    {
+      "what": "probability decimals",
+      "white": "2",
+      "black": "4",
+      "effect": "Jev ties more often at the top. A seeded draw breaks ties.",
+      "handled": false
+    },
+    {
+      "what": "build reported",
+      "white": "resolved build",
+      "black": "alias only",
+      "effect": "A silent Clef update is not visible. Records keep the date.",
+      "handled": false
+    },
+    {
+      "what": "state read limit",
+      "white": "32k tokens",
+      "black": "≈2k tokens",
+      "effect": "The state must stay under 1,500 tokens. Each turn checks it.",
+      "handled": true
+    }
+  ],
+  "games": 100,
+  "depth": 18,
+  "startedAt": "2026-10-06T19:21:29.201Z",
+  "harness": {
+    "gitSha": "57443c1",
+    "chessJs": "1.4.0",
+    "node": "v26.7.0"
+  },
+  "endedAt": "2026-10-06T21:24:14.603Z"
+}

@@ -1,0 +1,12 @@
+[Event "benchessmark 2026-10-07T09-51-clef-vs-clef-flash"]
+[Site "benchessmark"]
+[Date "2026.10.07"]
+[Round "67"]
+[White "Clef (cloudflare/clef)"]
+[Black "Clef-flash (cloudflare/clef-flash)"]
+[Result "1/2-1/2"]
+[Opening "Nimzo-Indian Defense"]
+[ECO "E20"]
+[Termination "threefold"]
+
+1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e4 Bxc3+ 5. bxc3 Nxe4 6. Nf3 Nxc3 7. d5 exd5 8. cxd5 Nxd1 9. Kxd1 O-O 10. Bd3 d6 11. Re1 Nc6 12. dxc6 bxc6 13. Nd4 Bg4+ 14. f3 Bxf3+ 15. gxf3 d5 16. Nxc6 d4 17. Nxd8 Rfxd8 18. Re8+ Rxe8 19. f4 Re1+ 20. Kxe1 Re8+ 21. Kd1 Re1+ 22. Kxe1 c5 23. Kd1 c4 24. Bxc4 d3 25. Bxd3 f5 26. Bc4+ Kf8 27. Ba3+ Ke8 28. Bb5+ Kf7 29. Bc4+ Ke8 30. Bb5+ Kf7 31. Bc4+ Ke8 1/2-1/2

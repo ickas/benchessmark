@@ -1,0 +1,12 @@
+[Event "benchessmark 2026-10-07T09-51-clef-vs-clef-flash"]
+[Site "benchessmark"]
+[Date "2026.10.07"]
+[Round "25"]
+[White "Clef (cloudflare/clef)"]
+[Black "Clef-flash (cloudflare/clef-flash)"]
+[Result "1/2-1/2"]
+[Opening "Sicilian Defense: Dragon Variation"]
+[ECO "B70"]
+[Termination "threefold"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. e5 dxe5 7. Bb5+ Nc6 8. Bxc6+ bxc6 9. Nxc6 Qxd1+ 10. Kxd1 e6 11. Nxe5 Nd5 12. Nxd5 exd5 13. Ke1 Bb4+ 14. c3 Bxc3+ 15. bxc3 O-O 16. Nd3 Re8+ 17. Kf1 Re1+ 18. Kxe1 d4 19. cxd4 Bd7 20. d5 Re8+ 21. Kd1 Ba4+ 22. Kd2 Re2+ 23. Kxe2 Bd1+ 24. Kxd1 f5 25. d6 f4 26. Nxf4 Kf7 27. d7 Ke7 28. d8=Q+ Kxd8 29. Ne6+ Kd7 30. Nc5+ Kd6 31. Ne4+ Kc6 32. Nc3 Kd6 33. Ne4+ Kd7 34. Nc5+ Kc6 35. Ne4 Kd5 36. Nc3+ Kc6 37. Ne4 Kd5 38. Nc3+ Kc6 39. Ne4 1/2-1/2

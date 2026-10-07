@@ -1,0 +1,12 @@
+[Event "benchessmark 2026-10-07T09-51-clef-vs-clef-flash"]
+[Site "benchessmark"]
+[Date "2026.10.07"]
+[Round "38"]
+[White "Clef-flash (cloudflare/clef-flash)"]
+[Black "Clef (cloudflare/clef)"]
+[Result "1/2-1/2"]
+[Opening "French Defense: Winawer Variation"]
+[ECO "C15"]
+[Termination "threefold"]
+
+1. e4 e6 2. d4 d5 3. Nc3 Bb4 4. exd5 exd5 5. Nf3 Bxc3+ 6. bxc3 Nc6 7. c4 dxc4 8. Bxc4 Nf6 9. O-O O-O 10. d5 Nxd5 11. Bxd5 Qxd5 12. Qxd5 Bd7 13. Qxd7 Rfd8 14. Qxd8+ Rxd8 15. Bb2 Rf8 16. Bxg7 Kxg7 17. Nd4 Nxd4 18. c3 Nf3+ 19. gxf3 Rd8 20. f4 f5 21. f3 Kf6 22. c4 Rg8+ 23. Kf2 Rg2+ 24. Kxg2 Ke6 25. Rfe1+ Kd6 26. Red1+ Ke6 27. Rd6+ Kxd6 28. c5+ Kxc5 29. Rc1+ Kb6 30. Rxc7 Kxc7 31. Kf2 Kd6 32. Ke3 Kc5 33. Kd3 Kd6 34. Kc4 b5+ 35. Kxb5 a6+ 36. Kxa6 Kc6 37. Ka5 Kd5 38. Kb4 Kd4 39. Ka3 Kd3 40. Kb4 Kd4 41. Ka3 Kc4 42. Ka4 Kd4 43. Ka3 1/2-1/2

@@ -1,0 +1,12 @@
+[Event "benchessmark 2026-10-07T07-37-jev-vs-clef-flash"]
+[Site "benchessmark"]
+[Date "2026.10.07"]
+[Round "58"]
+[White "Clef-flash (cloudflare/clef-flash)"]
+[Black "Jev (typesafe/jev-1.13-20260917)"]
+[Result "1/2-1/2"]
+[Opening "Queen's Gambit Accepted"]
+[ECO "D20"]
+[Termination "threefold"]
+
+1. d4 d5 2. c4 dxc4 3. e4 Qxd4 4. Bxc4 Qxc4 5. Nf3 Qxe4+ 6. Be3 Qxe3+ 7. fxe3 Nf6 8. O-O Nc6 9. Nc3 Nd4 10. exd4 Ne4 11. Nxe4 c5 12. dxc5 Bg4 13. Nf6+ gxf6 14. Qa4+ Bd7 15. Qxd7+ Kxd7 16. Ne5+ fxe5 17. c6+ Kxc6 18. Rfc1+ Kb6 19. Rc6+ Kxc6 20. Rc1+ Kb6 21. Rc6+ Kxc6 22. Kf2 Kd5 23. Ke3 Kc4 24. b3+ Kc3 25. Ke4 f5+ 26. Kxe5 f4 27. Kxf4 e5+ 28. Kxe5 Re8+ 29. Kd5 Re5+ 30. Kxe5 Bd6+ 31. Kxd6 Rd8+ 32. Kc5 Rc8+ 33. Kd6 Rd8+ 34. Kc5 Rc8+ 35. Kd6 Rd8+ 1/2-1/2

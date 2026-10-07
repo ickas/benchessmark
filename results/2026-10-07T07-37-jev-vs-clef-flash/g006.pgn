@@ -1,0 +1,12 @@
+[Event "benchessmark 2026-10-07T07-37-jev-vs-clef-flash"]
+[Site "benchessmark"]
+[Date "2026.10.07"]
+[Round "6"]
+[White "Clef-flash (cloudflare/clef-flash)"]
+[Black "Jev (typesafe/jev-1.13-20260917)"]
+[Result "1/2-1/2"]
+[Opening "Italian Game: Giuoco Piano"]
+[ECO "C50"]
+[Termination "threefold"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. d4 exd4 5. Qxd4 Bxd4 6. Nxd4 Nxd4 7. O-O Nxc2 8. Bxf7+ Kxf7 9. Nc3 Nxa1 10. e5 Nf6 11. exf6 Qxf6 12. Bd2 Qxf2+ 13. Kxf2 Rf8 14. Rxa1 Ke7+ 15. Ke1 Rf1+ 16. Kxf1 Kf6 17. Ne4+ Ke6 18. Nc5+ Kd5 19. Nxd7 Bxd7 20. Ke1 Re8+ 21. Be3 Rxe3+ 22. Kd2 Rd3+ 23. Kxd3 Bb5+ 24. Kc3 Kc5 25. b4+ Kc6 26. Kd4 Bd3 27. Kxd3 Kd5 28. Rd1 Ke5 29. Re1+ Kd5 30. Re5+ Kxe5 31. Kc4 b5+ 32. Kxb5 c6+ 33. Kxc6 Kd4 34. Kd6 Kc4 35. Kc6 Kxb4 36. a3+ Kxa3 37. Kd5 Kb4 38. Kd4 Kb3 39. Kc5 Kc3 40. Kd5 Kd3 41. Kd6 Kc4 42. Kc6 Kd4 43. Kd6 Kc4 44. Kc7 Kd5 45. Kd7 Kc5 46. Ke6 Kd4 47. Kd7 Kc4 48. Kc6 Kd4 49. Kd6 Kc4 1/2-1/2

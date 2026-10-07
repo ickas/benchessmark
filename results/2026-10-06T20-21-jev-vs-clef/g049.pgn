@@ -1,0 +1,12 @@
+[Event "benchessmark 2026-10-06T20-21-jev-vs-clef"]
+[Site "benchessmark"]
+[Date "2026.10.06"]
+[Round "49"]
+[White "Jev (typesafe/jev-1.13-20260917)"]
+[Black "Clef (cloudflare/clef)"]
+[Result "0-1"]
+[Opening "Pirc Defense"]
+[ECO "B07"]
+[Termination "checkmate"]
+
+1. e4 d6 2. d4 Nf6 3. Nc3 g6 4. Nf3 Bg7 5. Bb5+ c6 6. Bxc6+ bxc6 7. O-O d5 8. exd5 cxd5 9. Nxd5 Nxd5 10. Bf4 Nxf4 11. Qd3 Nxd3 12. cxd3 O-O 13. Rfd1 Bxd4 14. Nxd4 Qxd4 15. Rdc1 Qxd3 16. Rxc8 Rxc8 17. Rd1 Qxd1# 0-1

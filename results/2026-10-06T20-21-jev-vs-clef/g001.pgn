@@ -1,0 +1,12 @@
+[Event "benchessmark 2026-10-06T20-21-jev-vs-clef"]
+[Site "benchessmark"]
+[Date "2026.10.06"]
+[Round "1"]
+[White "Jev (typesafe/jev-1.13-20260917)"]
+[Black "Clef (cloudflare/clef)"]
+[Result "1-0"]
+[Opening "Ruy Lopez: Morphy Defense"]
+[ECO "C70"]
+[Termination "checkmate"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Bxc6 bxc6 5. d4 exd4 6. Qxd4 Nf6 7. Qxf6 Qxf6 8. O-O d5 9. exd5 cxd5 10. Nc3 Be7 11. Nxd5 O-O 12. Nxe7+ Qxe7 13. Ne5 Qxe5 14. Rd1 Rd8 15. Rxd8+ Qe8 16. Rxe8# 1-0

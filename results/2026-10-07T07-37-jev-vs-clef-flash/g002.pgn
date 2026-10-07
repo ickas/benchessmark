@@ -1,0 +1,12 @@
+[Event "benchessmark 2026-10-07T07-37-jev-vs-clef-flash"]
+[Site "benchessmark"]
+[Date "2026.10.07"]
+[Round "2"]
+[White "Clef-flash (cloudflare/clef-flash)"]
+[Black "Jev (typesafe/jev-1.13-20260917)"]
+[Result "1/2-1/2"]
+[Opening "Ruy Lopez: Morphy Defense"]
+[ECO "C70"]
+[Termination "threefold"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. d4 exd4 5. Qxd4 Nxd4 6. Nxd4 axb5 7. Nxb5 Nf6 8. O-O Nxe4 9. Nxc7+ Qxc7 10. c4 Qxc4 11. Nc3 Qxf1+ 12. Kxf1 Nxc3 13. bxc3 Rxa2 14. Rxa2 d5 15. Re2+ Kd7 16. Re7+ Bxe7 17. c4 dxc4 18. f3 c3 19. f4 c2 20. Be3 c1=Q+ 21. Bxc1 Kc7 22. Be3 Re8 23. Bb6+ Kxb6 24. Ke1 Bb4+ 25. Kf2 Re2+ 26. Kxe2 Bc3 27. Kd3 Bd4 28. Kxd4 Kc6 29. Kc3 Kc5 30. Kd3 Kd5 31. Ke3 Kc4 32. Ke4 f5+ 33. Kf3 Kb3 34. Ke3 Kc4 35. Kd2 Kd4 36. Ke2 Kc3 37. Ke3 Kb2 38. Kd4 Kc2 39. Kc4 b5+ 40. Kxb5 Ba6+ 41. Kxa6 Kc3 42. Kb6 Kc4 43. Kc6 Kb4 44. Kd5 Kc3 45. Kc5 Kb3 46. Kd4 Kb4 47. Kd3 Kb3 48. Kd4 Kb4 49. Kd3 Kb3 50. Kd4 1/2-1/2

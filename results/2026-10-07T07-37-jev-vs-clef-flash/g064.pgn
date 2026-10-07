@@ -1,0 +1,12 @@
+[Event "benchessmark 2026-10-07T07-37-jev-vs-clef-flash"]
+[Site "benchessmark"]
+[Date "2026.10.07"]
+[Round "64"]
+[White "Clef-flash (cloudflare/clef-flash)"]
+[Black "Jev (typesafe/jev-1.13-20260917)"]
+[Result "1/2-1/2"]
+[Opening "Queen's Pawn Game: Accelerated London System"]
+[ECO "D00"]
+[Termination "threefold"]
+
+1. d4 d5 2. Bf4 Nf6 3. e4 dxe4 4. c4 Qxd4 5. Qxd4 Nd5 6. cxd5 Nc6 7. dxc6 bxc6 8. Qxe4 Bg4 9. Nf3 Bxf3 10. gxf3 O-O-O 11. Bxc7 Kxc7 12. Qxc6+ Kxc6 13. Bb5+ Kxb5 14. Nc3+ Kc6 15. O-O Rd1 16. Rfxd1 Kc5 17. Rd5+ Kc6 18. Rd6+ Kxd6 19. Rd1+ Kc6 20. Rd6+ Kxd6 21. Ne4+ Ke5 22. f4+ Kxf4 23. Nc3 e5 24. Nd5+ Ke4 25. f3+ Kxf3 26. Nc3 Bc5+ 27. Kf1 Be3 28. Ne4 Kxe4 29. Ke1 Bf2+ 30. Kxf2 Rd8 31. Ke1 Rd1+ 32. Kxd1 Kd4 33. Kd2 Kc4 34. b3+ Kb4 35. a3+ Kxa3 36. Kd3 Kxb3 37. Kd2 Kc4 38. Ke3 Kd5 39. Kd2 Kd4 40. Kc2 Ke4 41. Kd2 Kf3 42. Kd3 e4+ 43. Kd4 e3 44. Kc3 e2 45. Kd4 e1=Q 46. Kc4 Qc1+ 47. Kd3 Qd1+ 48. Kc4 Qd4+ 49. Kxd4 Kf4 50. Kd5 Kf5 51. Kd6 Kf6 52. Kc5 Ke6 53. Kd4 Kf5 54. Kd5 Kf6 55. Kd4 Kf5 56. Kd5 Kf4 57. Kd4 Kf5 1/2-1/2

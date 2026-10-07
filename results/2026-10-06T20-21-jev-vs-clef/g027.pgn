@@ -1,0 +1,12 @@
+[Event "benchessmark 2026-10-06T20-21-jev-vs-clef"]
+[Site "benchessmark"]
+[Date "2026.10.06"]
+[Round "27"]
+[White "Jev (typesafe/jev-1.13-20260917)"]
+[Black "Clef (cloudflare/clef)"]
+[Result "1/2-1/2"]
+[Opening "Sicilian Defense: Lasker-Pelikan Variation"]
+[ECO "B33"]
+[Termination "threefold"]
+
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Nd5 exd4 7. Nxf6+ gxf6 8. Qxd4 Nxd4 9. Bd3 Bb4+ 10. Bd2 Bxd2+ 11. Kxd2 O-O 12. Rad1 Nb3+ 13. axb3 Qa5+ 14. Kc1 Qg5+ 15. Rd2 Qxd2+ 16. Kxd2 d5 17. exd5 Bd7 18. Bxh7+ Kxh7 19. Rd1 Kg7 20. Rg1 Kh7 21. Rd1 Rfd8 22. Rg1 Kg7 23. Rd1 Kh7 24. Rg1 Kg7 25. Rd1 Kh7 1/2-1/2

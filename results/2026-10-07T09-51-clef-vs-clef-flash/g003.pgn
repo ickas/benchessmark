@@ -1,0 +1,12 @@
+[Event "benchessmark 2026-10-07T09-51-clef-vs-clef-flash"]
+[Site "benchessmark"]
+[Date "2026.10.07"]
+[Round "3"]
+[White "Clef (cloudflare/clef)"]
+[Black "Clef-flash (cloudflare/clef-flash)"]
+[Result "0-1"]
+[Opening "Ruy Lopez: Berlin Defense"]
+[ECO "C65"]
+[Termination "checkmate"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. d4 exd4 5. Nxd4 Nxd4 6. Qxd4 Nxe4 7. Qxe4+ Be7 8. Qxe7+ Kxe7 9. O-O d5 10. Re1+ Be6 11. Rxe6+ fxe6 12. Bg5+ Kf7 13. Bxd8 Rhxd8 14. Nc3 e5 15. Nxd5 Rxd5 16. Be8+ Rxe8 17. Re1 e4 18. Rxe4 Rxe4 19. Kf1 Rd1# 0-1
