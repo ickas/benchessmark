@@ -9,6 +9,9 @@ graded every move at depth 18.
 The games are in [`results/`](../results): a PGN per game, plus each run's
 `match.json` (the setup) and `summary.json` (every number below).
 
+The article on these results, with a replay of one game, is at
+[ickas.dev](https://ickas.dev/writing/benchmarking-jev-clef-chess).
+
 ## The ranking
 
 | match | score | Elo gap, 95% interval | verdict |

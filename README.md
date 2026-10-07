@@ -8,6 +8,9 @@ It starts with **Jev** (TypeSafe) against **Clef** (Cloudflare). Both are System
 decision models: they do not write text, they score options. Each turn the legal
 moves are the options, so a model can never play an illegal move.
 
+The write-up of what this found is at
+[ickas.dev](https://ickas.dev/writing/benchmarking-jev-clef-chess).
+
 ## Results
 
 Three matches of 100 games, the same 50 openings each, graded by Stockfish 19:
